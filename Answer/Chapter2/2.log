@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.5)  9 MAR 2023 11:56
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.5)  9 MAR 2023 12:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -574,7 +574,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [4]
-Overfull \vbox (270.2126pt too high) has occurred while \output is active []
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
+
+[5]
+Overfull \vbox (244.60869pt too high) has occurred while \output is active []
 
 
 
@@ -584,7 +592,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[5] (./2.aux) ) 
+[6] (./2.aux) ) 
 Here is how much of TeX's memory you used:
  10095 strings out of 475748
  259267 string characters out of 5802712
@@ -594,4 +602,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  89i,17n,97p,1187b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2.pdf (5 pages).
+Output written on 2.pdf (6 pages).
