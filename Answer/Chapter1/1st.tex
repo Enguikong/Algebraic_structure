@@ -1,0 +1,179 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{verbatim,amsthm,amsfonts,mathdots}
+\usepackage{xeCJK,geometry,float,graphicx}
+\usepackage{amsmath,amssymb,zhnumber,booktabs,setspace,tasks}
+\usepackage{cases}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\geometry{a4paper}
+\pagestyle{fancy}
+\fancyhf{}
+
+\pagenumbering{arabic}
+
+\begin{document}
+
+\fancyhead[L]{En土土}
+\fancyhead[C]{代数结构答案}
+\fancyhead[R]{妮可}
+\fancyfoot[C]{\thepage}
+
+\section{集合}
+\subsection{}   %1
+\begin{enumerate}
+    \item [(1)]不相等.
+    \item [(2)]相等.
+    \item [(3)]相等.
+\end{enumerate}
+
+\subsection{}   %2
+\begin{proof}
+    \[
+        \begin{cases}
+            \ A \subseteq B \Rightarrow \ \forall\ x\in A,\ x\in B. \\
+            \\
+            \ B \subset C \Rightarrow
+            \ 
+            \begin{cases}
+                \ \forall\ x\in B,\ x\in C \\
+                \ \exists\ x\in C,\ x\notin B
+            \end{cases}
+        \end{cases}
+        \Rightarrow\ 
+        \begin{cases}
+            \ \forall\ x\in A,\ x\in C\\
+            \ \exists\ x\in C,\ x\notin A
+        \end{cases}
+        \ \Rightarrow\ 
+        A \subset C.
+    \]
+\end{proof}
+
+\subsection{}   %3
+\begin{enumerate}
+    \item [(1)]不成立.
+    \item [(2)]不成立.
+    \item [(3)]不成立.
+    \item [(4)]成立.
+    \item [(5)]成立.
+    \item [(6)]不成立.
+\end{enumerate}
+
+\subsection{}   %4
+\begin{enumerate}
+    \item [(1)]不成立.
+    \item [(2)]成立.
+    \item [(3)]成立.
+\end{enumerate}
+
+\subsection{}   %5
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \[
+            A\cap \left( \overline{A} \cup B\right)
+            =
+            \left( A \cap \overline{A}\right) \cup \left( A \cap B \right)
+            =
+            \varnothing  \cup \left(A \cap B\right)
+            = 
+            A \cap B.
+        \]
+        \item [(2)]
+        \[
+            A\cup \left(A\cap B\right)
+            =
+            \left(A \cup A\right) \cap \left(A\cup B\right)
+            =
+            A\cap \left(A\cup B\right).
+        \]
+        \[
+           \begin{cases}
+            \ A\subseteq A\cup \left(A\cap B\right)\\
+            \ A\supseteq A\cap \left(A\cup B\right)
+           \end{cases}
+           \ \Rightarrow\ 
+           A\cup \left(A\cap B\right)
+           = A.
+        \]
+        \item [(3)]
+        \begin{enumerate}
+            \item [(a)]
+                \begin{align*}
+                    \forall\ x \in \overline{\bigcap \limits_{i} A_i} \ \Rightarrow\ & x \notin  \bigcap \limits_{i} A_i & \forall\ x \in \bigcup\limits_{i}\overline{A_i} \ \Rightarrow\  & \exists 1 \leq k \leq n,x \in \overline{A_k}\\
+                    \Rightarrow\ & \exists 1 \leq k \leq n,x \notin A_k & \Rightarrow\ & \exists 1 \leq k \leq n,x \notin A_k\\
+                    \Rightarrow\ & \exists 1 \leq k \leq n,x \in \overline{A_k} & \Rightarrow\ & x \notin \bigcap \limits_{i}A_i\\
+                    \Rightarrow\ & x \in \bigcup\limits_{i}\overline{A_i} & \Rightarrow\ & x \in \overline{\bigcap \limits_{i} A_i}\\
+                    \Rightarrow\ & \overline{\bigcap \limits_{i} A_i} \subseteq \bigcup\limits_{i}\overline{A_i} & \Rightarrow\ & \bigcup\limits_{i}\overline{A_i} \subseteq \overline{\bigcap \limits_{i} A_i}
+                \end{align*}
+                即证$\overline{\bigcap \limits_{i} A_i}=\bigcup\limits_{i}\overline{A_i}$.
+            \item [(b)]
+            \begin{align*}
+                \forall\ x \in \overline{\bigcup \limits_{i} A_i} \ \Rightarrow\ & x \notin  \bigcup \limits_{i} A_i & \forall\ x \in \bigcap\limits_{i}\overline{A_i} \ \Rightarrow\ & \forall 1 \leq k \leq n,x \in \overline{A_k}\\
+                \Rightarrow\ & \forall 1 \leq k \leq n,x \notin A_k & \Rightarrow\ & \forall 1 \leq k \leq n,x \notin A_k\\
+                \Rightarrow\ & \forall 1 \leq k \leq n,x \in \overline{A_k} & \Rightarrow &\ x \notin  \bigcup \limits_{i} A_i\\
+                \Rightarrow\ & x \in \bigcap \limits_{i}\overline{A_i} & \Rightarrow\ & x \in \overline{\bigcup \limits_{i} A_i}\\
+                \Rightarrow\ & \overline{\bigcup \limits_{i} A_i} \subseteq \bigcap\limits_{i}\overline{A_i} & \Rightarrow\ & \bigcap\limits_{i}\overline{A_i} \subseteq \overline{\bigcup \limits_{i} A_i}
+            \end{align*}
+            即证$\overline{\bigcup \limits_{i} A_i}=\bigcap\limits_{i}\overline{A_i}$.
+        \end{enumerate}
+    \end{enumerate}
+\end{proof}
+
+\subsection{}   %6
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        $B \subseteq C \Rightarrow \forall x \in B,x \in C$.
+        \[
+            \forall x \in (A \cap B),x \in A \mbox{且} \ x \in B
+            \ \Rightarrow\ x \in A \mbox{且} \ x \in C
+            \ \Rightarrow\ x \in (A \cap C)
+        \]
+        \item [(2)]
+        \begin{align*}
+            A\subseteq C,\ B\subseteq\ C 
+            \ \Leftrightarrow\ &
+            A\cup C=C,\ B\cup C=C\\
+            \ \Leftrightarrow\ &
+            \left(A\cup B\right)\cup C
+            =A\cup \left(B\cup C\right)
+            =A\cup C
+            =C\\
+            \ \Leftrightarrow\ &
+            \left(A\cup B\right) \subseteq C.
+        \end{align*}
+        \item [(3)]
+        若$|A \cup B| > |A| + |B|$,则$\exists x \in (A\cup B)$,且$x \notin A,x \notin B$,矛盾.
+
+        $|A \cup B| = |A| + |B| - |A \cap B|$,$|A \cup B| = |A| + |B|$当且仅当$A \cap B =\phi $时.
+    \end{enumerate}
+\end{proof}
+
+\subsection{}   %7
+\begin{enumerate}
+    \item [(1)]设所求集合为$E$.
+    \begin{enumerate}
+        \item [1.]（基础语句）令$D=\left\{0,1,2,3,4,5,6,7,8,9\right\}$，若$x\in\ D$，则$x\in\ E$.
+        \item [2.]（归纳语句）若$x,\ y\in\ E$，则$x$与$y$的连接$\overline{xy}\in\ E$.
+        \item [3.]（终结语句）$x\in \ E$，当且仅当$x$是由有限次$1,2$得到的.
+    \end{enumerate}
+
+    \item [(2)]设所求集合为$E$.
+    \begin{enumerate}
+        \item [1.]（基础语句）令$D=\left\{0,1,2,3,4,5,6,7,8,9\right\}$，若$x\in\ D$，则$x.\in\ E,\ .x\in\ E$.
+        \item [2.]（归纳语句）若$x=a.b,\ y=c.d\in\ E$，则$\overline{ac} . \overline{bd}\in\ E$.
+        \item [3.]（终结语句）$x\in \ E$，当且仅当$x$是由有限次$1,2$得到的.
+    \end{enumerate}
+
+    \item [(3)]设所求集合为$E$.
+    \begin{enumerate}
+        \item [1.]（基础语句）$0,\ 10\in\ E$.
+        \item [2.]（归纳语句）若$x=\overline{A0}\in\ E\ (x\neq 0)$，则$\overline{A00},\ \overline{A10}\in \ E$.
+        \item [3.]（终结语句）$x\in \ E$，当且仅当$x$是由有限次$1,2$得到的.
+    \end{enumerate}
+\end{enumerate}
+\end{document}

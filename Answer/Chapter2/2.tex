@@ -1,0 +1,232 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{verbatim,amsthm,amsfonts,mathdots}
+\usepackage{xeCJK,geometry,float,graphicx}
+\usepackage{amsmath,amssymb,zhnumber,booktabs,setspace,tasks}
+\usepackage{cases}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\geometry{a4paper}
+\pagestyle{fancy}
+\fancyhf{}
+
+\pagenumbering{arabic}
+
+\begin{document}
+
+\fancyhead[L]{En土土}
+\fancyhead[C]{代数结构答案}
+\fancyhead[R]{妮可}
+\fancyfoot[C]{\thepage}
+
+\section{数论初步}
+\subsection{}   %1
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \[
+            \forall\ x|a,\ x|b
+            \begin{cases}
+                x>0 &\xrightarrow{a>0,x|a}\ x\leq a\\
+                x<0 &\xrightarrow{a>0}\ x<a
+            \end{cases}    
+            \ \Rightarrow\ 
+            x<a\ \xrightarrow{a|a,a|b}
+            (a,b)=a.
+        \]
+        \item [(2)]
+        \[
+            \begin{cases}
+                &(a,b)|(a,b),\ (a,b)|b\\
+                \\
+                &\forall\ x|(a,b),\ x|b,\ \mbox{有}x\leq (a,b).\quad (\mbox{证明同}(1))
+            \end{cases}
+            \ \Rightarrow\ 
+            \left((a,b),b\right)=(a,b).
+        \]
+    \end{enumerate}
+\end{proof}
+
+\subsection{}   %2
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]不妨假设$\exists\ n>0,\ (n,n+1)=d>1$
+        \begin{align*}
+            (n,n+1)=d\ 
+            \Rightarrow\ &
+            \exists\ x,y\in \mathbb{Z},\ n=xd,n+1=yd\\
+            \Rightarrow\ &
+            1=(n+1)-n=(y-x)d>0\\
+            \Rightarrow\ &
+            y>x,\ (y-x)d\geq d>1\\
+            \Rightarrow\ &
+            \mbox{矛盾，假设不成立.}
+        \end{align*}
+        
+        \item [(2)]可取$(n,k)$，证明如下
+        \[
+            \mbox{由推论2.3，取}x=1,\ a=n,\ b=k
+            \mbox{，有}(n,k)=(n,n+k).    
+        \]
+        
+    \end{enumerate}
+\end{proof}
+
+\subsection{}   %3
+\begin{enumerate}
+    \item [(1)]$(314,159)=1$，有解。由辗转相除法
+    \begin{align*}
+        314 & = 159*1 + 155\\
+        159 & = 155*1 + 4\\
+        155 & = 4*38 + 3\\
+        4 & = 3*1 + 1  
+    \end{align*}
+    即
+    \begin{align*}
+        1 
+        & = 4 - 3*1\\
+        & = 4 - (155-4*38)*1\\
+        & = (159-155*1)*39 - 155\\
+        & = 159*39 - 155*40\\
+        & = 159*39 - (314-159*1)*40\\
+        & = 159*79 - 314*40
+    \end{align*}
+    即$x=-40,y=79$.
+    \item [(2)]$(3141,1592)=1$，有解。由辗转相除法
+    \begin{align*}
+        3141 & = 1592*1 + 1549\\
+        1592 & = 1549*1 + 43\\
+        1549 & = 43*36 + 1
+    \end{align*}
+    即
+    \begin{align*}
+        1 
+        & = 1549 - 43*36\\
+        & = (1592 - 43) - 43*36\\
+        & = 1592 -43*37\\
+        & = \\
+        & = \\
+        & = 
+    \end{align*}
+\end{enumerate}
+
+\subsection{}   %4
+
+
+\subsection{}   %5
+
+
+\subsection{}   %6
+
+
+\subsection{}   %7
+
+
+\subsection{}   %8
+
+
+\subsection{}   %9
+
+
+\subsection{}   %10
+
+
+\subsection{}   %11
+
+
+\subsection{}   %12
+
+
+\subsection{}   %13
+
+
+\subsection{}   %14
+
+
+\subsection{}   %15
+
+
+\subsection{}   %16
+
+
+\subsection{}   %17
+
+
+\subsection{}   %18
+
+
+\subsection{}   %19
+
+
+\subsection{}   %20
+
+
+\subsection{}   %21
+
+
+\subsection{}   %22
+
+
+\subsection{}   %23
+
+
+\subsection{}   %24
+
+
+\subsection{}   %25
+
+
+\subsection{}   %26
+
+
+\subsection{}   %27
+
+
+\subsection{}   %28
+
+
+\subsection{}   %29
+
+
+\subsection{}   %30
+
+
+\subsection{}   %31
+
+
+\subsection{}   %32
+
+
+\subsection{}   %33
+
+
+\subsection{}   %34
+
+
+\subsection{}   %35
+
+
+\subsection{}   %36
+
+
+\subsection{}   %37
+
+
+\subsection{}   %38
+
+
+\subsection{}   %39
+
+
+\subsection{}   %40
+
+
+\subsection{}   %41
+
+
+\subsection{}   %42    
+
+
+\end{document}
