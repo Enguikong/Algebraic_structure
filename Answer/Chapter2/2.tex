@@ -270,6 +270,7 @@
 \end{enumerate}
 
 \subsection{}   %11
+\subsubsection{必须要用30张}
 \begin{enumerate}
     \item []设需要$x$张$5$分，$y$张$1$角，$z=(30-x-y)$张$2$角五分.有
     \begin{align*}
@@ -323,6 +324,170 @@
         \end{cases}
     \]
 \end{enumerate}
+
+\subsubsection{不多于30张}
+    即求$a,b,c \in \mathbb{N},0.05a+0.1b+0.25c=5$,且$a+b+c\leq 30$.即解
+    \[
+        \begin{cases}
+            \ a+2b+5c = 100 \\
+            \ (a+b+c) \leq 30  \\
+            \ a,b,c\in \mathbb{N}
+        \end{cases}
+    \]
+    \begin{enumerate}
+        \item [(1)]$c\leq 13$
+        \[a+2b+5c<2\cdot(30-c)+5c=3c+60\leq 99<100,\mbox{无解.}\]
+        \item [(2)]$c >20$
+        \[a+2b+5c>5c>100,\mbox{无解.}\]
+        \item [(3)]由$(1)(2)$可知$14\leq c \leq 20$
+        \[
+            a+2b=100-5c,
+            (1,2)=1|100-5c
+            \Rightarrow
+            \mbox{方程存在解}.
+        \]
+        又$a = 100-5c,\ b=0$为一组特解，故通解为
+        \[
+            \begin{cases}
+                a = 100-5c-2t;\\
+                b = t.\ (t\in\mathbb{N})
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                \ a+b+c=100-4k-t &\leq 30 \\
+                \ a=100-5c-2t &\geq  0
+            \end{cases}
+            \Rightarrow 
+            \begin{cases}
+                \ t\geq 70-4k\\
+                \\
+                \ t\leq \displaystyle{[\frac{100-5k}{2}]}
+            \end{cases}
+        \]
+        即解的组数为
+        \[
+            \begin{cases}
+                \left[\displaystyle{\frac{100-5k}{2}}\right]-(70-4k)+1; &(70-4k\geq 0)\\
+                \\
+                \left[\displaystyle{\frac{100-5k}{2}}\right]+1.&(70-4k <0)
+            \end{cases}
+        \]
+        \begin{enumerate}
+            \item [(a)]$(c=14)$解的组数为$\left[\displaystyle{\frac{100-5\times 14}{2}}\right]-(70-4\times 14)+1=2$
+            \begin{comment}
+            \[
+                \begin{cases}
+                    a&=0;\\
+                    b&=15;\\
+                    c&=14;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=2;\\
+                    b&=14;\\
+                    c&=14.
+                \end{cases}
+            \]\end{comment}
+            \item [(b)]$(c=15)$解的组数为$\left[\displaystyle{\frac{100-5\times 15}{2}}\right]-(70-4\times 15)+1=3$
+            \begin{comment}
+            \[
+                \begin{cases}
+                    a&=1;\\
+                    b&=12;\\
+                    c&=15;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=3 ;\\
+                    b&=11 ;\\
+                    c&=15 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=5 ;\\
+                    b&=10 ;\\
+                    c&=15 .
+                \end{cases}
+            \]\end{comment}
+            \item [(c)]$(c=16)$解的组数为$\left[\displaystyle{\frac{100-5\times 16}{2}}\right]-(70-4\times 16)+1=5$
+            \begin{comment}
+            \[
+                \begin{cases}
+                    a&=0 ;\\
+                    b&=10 ;\\
+                    c&=16 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=2 ;\\
+                    b&=9 ;\\
+                    c&=16 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=4 ;\\
+                    b&=8 ;\\
+                    c&=16 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=6 ;\\
+                    b&=7 ;\\
+                    c&=16 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=8;\\
+                    b&=6;\\
+                    c&=16.
+                \end{cases}
+            \]\end{comment}
+            \item [(d)]$(c=17)$解的组数为$\left[\displaystyle{\frac{100-5\times 17}{2}}\right]-(70-4\times 17)+1=6$
+            \begin{comment}
+            \[
+                \begin{cases}
+                    a&=1 ;\\
+                    b&=7 ;\\
+                    c&=17 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=3 ;\\
+                    b&=6 ;\\
+                    c&=17 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=5 ;\\
+                    b&=5 ;\\
+                    c&=17 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=7 ;\\
+                    b&=4 ;\\
+                    c&=17 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=9 ;\\
+                    b&=3 ;\\
+                    c&=17 ;
+                \end{cases}
+                \quad
+                \begin{cases}
+                    a&=11 ;\\
+                    b&=2 ;\\
+                    c&=17 ;
+                \end{cases}
+            \]\end{comment}
+            \item [(e)]$(c=18)$解的组数为$\left[\displaystyle{\frac{100-5\times 18}{2}}\right]+1=6$
+            \item [(f)]$(c=19)$解的组数为$\left[\displaystyle{\frac{100-5\times 19}{2}}\right]+1=3$
+            \item [(g)]$(c=20)$解的组数为$\left[\displaystyle{\frac{100-5\times 20}{2}}\right]+1=1$
+        \end{enumerate}
+        即共有$2+3+5+6+6+3+1=26$种兑换方法.
+    \end{enumerate}
 
 \subsection{}   %12
 \begin{enumerate}
@@ -614,10 +779,84 @@
 \end{enumerate}
 
 \subsection{}   %20
-
+\begin{enumerate}
+    \item []设
+    \[
+        \begin{cases}
+            \ 3x\equiv m-1 &\pmod{20}\\
+            \ 5y\equiv m &\pmod{20}\\
+            \ 7z\equiv m+1 &\pmod{20}.
+        \end{cases}
+        \qquad (1\leq m \leq 18)
+    \]    
+    \item []则
+    \[
+        \begin{cases}
+            \ 3x&=20(m-1)+(m-1)\\
+            \ 5y&=20m+m\\
+            \ 7z&=20(m+1)+(m+1).
+        \end{cases}
+        \Rightarrow
+        \begin{cases}
+            \ x&=7m-7\\
+            \ y&=\displaystyle{\frac{21m}{5}}\\
+            \ z&=3m+3.
+        \end{cases}
+        \Rightarrow
+        5|m,m\in\{5,10,15\}
+    \]
+    \item []即
+    \[
+        \begin{cases}
+            \ x&=28\\
+            \ y&=21\\
+            \ z&=18;
+        \end{cases}
+        \quad
+        \begin{cases}
+            \ x&=63\\
+            \ y&=42\\
+            \ z&=33;
+        \end{cases}
+        \quad
+        \begin{cases}
+            \ x&=98\\
+            \ y&=63\\
+            \ z&=48.
+        \end{cases}
+    \]
+    
+\end{enumerate}
 
 \subsection{}   %21
-
+\begin{enumerate}
+    \item []由题意有
+    \[
+        \begin{cases}
+            \ n   &\equiv 0 \pmod 2\\
+            \ n+1 &\equiv 0 \pmod 3\\
+            \ n+2 &\equiv 0 \pmod 4\\
+            \ n+3 &\equiv 0 \pmod 5\\
+            \ n+4 &\equiv 0 \pmod 6
+        \end{cases}
+        \ \Leftrightarrow\ 
+        \begin{cases}
+            \ n &\equiv 0 \pmod 2\\
+            \ n &\equiv 2 \pmod 3\\
+            \ n &\equiv 2 \pmod 4\\
+            \ n &\equiv 2 \pmod 5\\
+            \ n &\equiv 2 \pmod 6
+        \end{cases}
+    \]
+    \item []由$n=2$为一个特解，有模$[2,3,4,5,6]=60$唯一解
+    \[
+        n \equiv 2 \pmod {60}
+    \]
+    \item []故所求最小整数$n(n>2)$为
+    \[
+        n=62.
+    \]
+\end{enumerate}
 
 \subsection{}   %22
 \begin{enumerate}
@@ -660,32 +899,33 @@
             & \equiv 5 (\bmod 18)\\
             &
         \end{aligned}    
-        \qquad
+        \qquad \qquad
         \begin{aligned}
             5\cdot 5 
             & \equiv 25 (\bmod 18)\\
             & \equiv 7 (\bmod 18)
         \end{aligned}
-        \qquad
+    \]
+    \[
         \begin{aligned}
             7\cdot 5
             & \equiv 35 (\bmod 18)\\
             & \equiv 17 (\bmod 18)
         \end{aligned}
-    \]
-    \[
+        \qquad \qquad
         \begin{aligned}
             11\cdot 5 
             & \equiv 55 (\bmod 18)\\
             & \equiv 1 (\bmod 18)
-        \end{aligned}    
-        \qquad
+        \end{aligned}  
+    \]
+    \[
         \begin{aligned}
             13\cdot 5 
             & \equiv 65 (\bmod 18)\\
             & \equiv 11 (\bmod 18)
         \end{aligned}
-        \qquad
+        \qquad \qquad
         \begin{aligned}
             17\cdot 5
             & \equiv 85 (\bmod 18)\\
@@ -696,19 +936,133 @@
 \end{enumerate}
 
 \subsection{}   %24
-
+设$m,n$有素数分解
+\[
+    m = m_1^{k_1} m_2^{k_2} \cdots m_x^{k_x} \cdot p^{M},
+    \quad
+    n = n_1^{l_1} n_2^{l_2} \cdots n_y^{l_y} \cdot p^{N}
+\]
+且
+\[
+    \forall\ 1\leq i \leq x, 1\leq j \leq y,
+    \mbox{有}
+    m_i \neq n_j.
+    \qquad
+    (m_i,n_j\mbox{均为素数})
+\]
+\begin{align*}
+    \phi (mn) 
+    & = 
+    \phi \left( p^{M+N}
+    \cdot \prod\limits_{i=1}^{x} m_i^{k_i} 
+    \cdot \prod\limits_{j=1}^{y} n_{j}^{l_{j}} \right)\\
+    & = 
+    \phi (p^{M+N}) 
+    \cdot \prod\limits_{i=1}^{x} \phi (m_i^{k_i}) 
+    \cdot \prod\limits_{j=1}^{y} \phi (n_{j}^{l_{j}})\\
+    & = 
+    p^{M+N}\cdot \displaystyle{(1-\frac{1}{p})}
+    \cdot \prod\limits_{i=1}^{x} m_i^{k_i} \displaystyle{(1-\frac{1}{m_i})}
+    \cdot \prod\limits_{j=1}^{y} n_{j}^{l_{j}} \displaystyle{(1-\frac{1}{n_j})}\\
+    & =
+    mn \cdot \displaystyle{(1-\frac{1}{p})}
+    \cdot \prod\limits_{i=1}^{x} \displaystyle{(1-\frac{1}{m_i})}
+    \cdot \prod\limits_{j=1}^{y} \displaystyle{(1-\frac{1}{n_j})}
+\end{align*}
+\begin{align*}
+    \phi (m) \phi(n) 
+    & = 
+    \phi \left( p^{M}
+        \cdot \prod\limits_{i=1}^{x} m_i^{k_i} 
+    \right)
+    \cdot
+    \phi \left( p^{N}
+        \cdot \prod\limits_{j=1}^{y} n_{j}^{l_{j}}
+    \right)
+    \\
+    & = 
+    \phi (p^{M}) \cdot \phi (p^{N})
+    \cdot \prod\limits_{i=1}^{x} \phi (m_i^{k_i}) 
+    \cdot \prod\limits_{j=1}^{y} \phi (n_{j}^{l_{j}})\\
+    & = 
+    p^{M}\cdot \displaystyle{(1-\frac{1}{p})}
+    \cdot p^{N}\cdot \displaystyle{(1-\frac{1}{p})}
+    \cdot \prod\limits_{i=1}^{x} m_i^{k_i} \displaystyle{(1-\frac{1}{m_i})}
+    \cdot \prod\limits_{j=1}^{y} n_{j}^{l_{j}} \displaystyle{(1-\frac{1}{n_j})}\\
+    & =
+    mn \cdot \displaystyle{{(1-\frac{1}{p})}^2}
+    \cdot \prod\limits_{i=1}^{x} \displaystyle{(1-\frac{1}{m_i})}
+    \cdot \prod\limits_{j=1}^{y} \displaystyle{(1-\frac{1}{n_j})}
+\end{align*}
+即
+\[
+    \phi (m) \phi(n) = \displaystyle{(1-\frac{1}{p})} \cdot \phi (mn)
+\]
 
 \subsection{}   %25
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []显然有$n\geq 0$，否则$\phi (n) \geq 0 > n$，问题无意义.
+        \item [(1)]$6|n$即$2|n,3|n$，不妨记$n$有素数分解
+        \[
+            n=2^{p}\cdot 3^{q} \cdot n_1^{k_1} n_2^{k_2} \cdots n_N^{k_N}.
+            \quad
+            (p,q \geq 1)
+        \]
+        则
+        \begin{align*}
+            \phi (n) 
+            & = \phi (2^{p} \cdot 3^{q}\cdot n_1^{k_1} n_2^{k_2} \cdots n_N^{k_N}) \\
+            & = \phi (2^{p})\cdot \phi (3^{q}) \cdot \prod\limits_{i=1}^{N} \phi (n_i^{k_i})\\
+            & = n \cdot \displaystyle{\left(1-\frac{1}{2} \right) \cdot \left(1-\frac{1}{3}\right)\cdot \prod_{i=1}^{N} \left(1-\frac{1}{n_i}\right) }\\
+            & = \displaystyle{\frac{n}{3} \cdot \prod_{i=1}^{N} \left(1-\frac{1}{n_i}\right)}\\
+            & \leq \displaystyle{\frac{n}{3}}
+        \end{align*}
+        即证，且当且仅当$N=0$时等号成立.
+        \item [(2)]由$T14$可知
+        \[
+            n-1 \equiv 5 \pmod{6} ; 
+            \qquad
+            n+1 \equiv 1 \pmod{6} ;
+            \qquad
+            n \equiv 0 \pmod{6}
+        \]
+        即$6|n$，由$(1)$即证.
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %26
 
 
 \subsection{}   %27
-
+\begin{align*}
+    {314}^{159} 
+    & \equiv {(7\cdot 45 - 1)}^{159} \pmod{7}\\
+    & \equiv {(-1)}^{159} \pmod{7}\\
+    & \equiv (-1) \pmod{7}\\
+    & \equiv 6 \pmod{7}
+\end{align*}
 
 \subsection{}   %28
-
+\begin{enumerate}
+    \item [(1)]求末位即求模$10$余数
+    \begin{align*}
+        7^{355} 
+        & \equiv {(7^{4})}^{88} \cdot 7^{3} \pmod{10}\\
+        & \equiv {(2400 + 1)}^{88} \cdot {(340 + 3)} \pmod{10}\\
+        & \equiv 3 \pmod{10}
+    \end{align*}
+    即末位为$3$.
+    \item [(2)]求末两位即求模$100$余数
+    \begin{align*}
+        7^{355}
+        & \equiv {(7^{4})}^{88} \cdot 7^{3} \pmod{100}\\
+        & \equiv {(2400 + 1)}^{88} \cdot {(300 + 43)} \pmod{100}\\
+        & \equiv 43 \pmod{100}
+    \end{align*}
+    即末两位为$43$.
+\end{enumerate}
 
 \subsection{}   %29
 
