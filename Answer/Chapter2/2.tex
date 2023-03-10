@@ -223,44 +223,276 @@
     \item [(1)]$(1,1)=1|2$，方程有解，$x_0=0,y_0=2$为一组特解，故通解为
     \[
         \begin{cases}
-            \ x & =\  t \\
+            \ x & =\  t \quad (t\in \mathbb{Z})\\
             \ y & =\ 2 -t
-        \end{cases},
-        \ (t\in \mathbb{Z})
+        \end{cases}
     \]
-    \item [(2)]
-    \item [(3)]
+    \item [(2)]$(2,1)=1|2$，方程有解，$x_0=0,y_0=2$为一组特解，故通解为
+    \[
+        \begin{cases}
+            \ x & =\  t \quad (t\in \mathbb{Z})\\
+            \ y & =\ 2 - 2t
+        \end{cases}
+    \]
+    \item [(3)]$(15,16)=1|17$，方程有解，$x_0=-17,y_0=17$为一组特解，故通解为
+    \[
+        \begin{cases}
+            \ x & =\  16t - 17 \quad (t\in \mathbb{Z})\\
+            \ y & =\  17 - 15t
+        \end{cases}
+    \]
 \end{enumerate}
 
 \subsection{}   %10
-
+\begin{enumerate}
+    \item [(1)]$(6,-15)=3|51$，方程有解，$x_0=11,y_0=1$为一组特解，故通解为
+    \[
+        \begin{cases}
+            \ x & =\  11 - 5t \quad (t\in \mathbb{Z})\\
+            \ y & =\  1 - 2t
+        \end{cases}
+    \]
+    又要求负整数解，故$x,y<0,\ t\geq 3$，即所以负整数解为
+    \[
+        \begin{cases}
+            \ x & =\  11 - 5t \quad (t\in \mathbb{Z},\ t\geq 3)\\
+            \ y & =\  1 - 2t
+        \end{cases}
+    \]
+    \item [(2)]$(6,15)=3|51$，方程有解，$x_0=6,y_0=1$为一组特解，故通解为
+    \[
+        \begin{cases}
+            \ x & =\  6 + 5t \quad (t\in \mathbb{Z})\\
+            \ y & =\  1 - 2t
+        \end{cases}
+    \]
+    又要求负整数解，故$x,y<0,\ t$无解，即无负整数解.
+\end{enumerate}
 
 \subsection{}   %11
-
+\begin{enumerate}
+    \item []设需要$x$张$5$分，$y$张$1$角，$z=(30-x-y)$张$2$角五分.有
+    \begin{align*}
+        0.05 x + 0.1 y + 0.25 (30 - x - y) = 5\ 
+        &\Leftrightarrow\ 
+        x + 2 y + 5 (30 - x - y) = 100 \\
+        &\Leftrightarrow\ 
+        4x + 3y = 50
+    \end{align*}
+    \item []$(4,3)=1|50$，方程有解，$x_0=2,y_0=14$为一组特解，故通解为
+    \[
+        \begin{cases}
+            \ x & =\  2 + 3t \quad (t\in \mathbb{Z})\\
+            \ y & =\  14 - 4t
+        \end{cases}
+    \]
+    又$x,y,z\in \mathbb{N}$，即
+    \[
+        \begin{cases}
+            \ 2 + 3t  & \geq 0\\
+            \ 14 - 4t & \geq 0\\
+            \ 14 + t  & \geq 0
+        \end{cases}
+        \ \xrightarrow{t\in \mathbb{Z}}\ 
+        t=0,1,2,3.
+    \]
+    即有4种方案，记$x$张$5$分，$y$张$1$角，$z$张$2$角五分，则方案为
+    \[
+        \begin{cases}
+            \ x & = 2\\
+            \ y & = 14\\
+            \ z & = 14
+        \end{cases}
+        \qquad
+        \begin{cases}
+            \ x & = 5\\
+            \ y & = 10\\
+            \ z & = 15
+        \end{cases}
+        \qquad
+        \begin{cases}
+            \ x & = 8\\
+            \ y & = 6\\
+            \ z & = 16
+        \end{cases}
+        \qquad
+        \begin{cases}
+            \ x & = 11\\
+            \ y & = 2\\
+            \ z & = 17 
+        \end{cases}
+    \]
+\end{enumerate}
 
 \subsection{}   %12
-
+\begin{enumerate}
+    \item []设买了$x$个苹果，$12-x$个橘子，每个苹果$y$分钱，每个橘子$y-3$分钱，则有
+    \[
+        \begin{cases}
+            \ 0 \geq 12-x  < x \\
+            \ xy + (12-x)(y-3)  = 99
+        \end{cases}
+        \ \Leftrightarrow\
+        \begin{cases}
+            \ 6 < x \leq 12 \\
+            \ x + 4y = 45
+        \end{cases} 
+    \]
+    $(1,4)=1|45$，方程有解，$x_0=9,y_0=9$为一组特解，故通解为
+    \[
+        \begin{cases}
+            \ x & =\  9 + 4t \quad (t\in \mathbb{Z})\\
+            \ y & =\  9 - t
+        \end{cases}
+    \]
+    又$6 < x \leq 12 $，即$t=0,\ x=9,12-x=3$，买了9个苹果和3个橘子.
+\end{enumerate}
 
 \subsection{}   %13
-
+\[
+    6k+5 \equiv 6k+1 (\bmod 4) 
+\]
+又$6k \equiv 6 (\bmod 4)$，有
+\[
+    \begin{aligned}
+        6k+5 
+        &\equiv 7 (\bmod 4)\\
+        &\equiv 3 (\bmod 4)
+    \end{aligned}
+\]
 
 \subsection{}   %14
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]分情况讨论$6k,6k+2,6k+3,6k+4\ (k\geq 1)$即可，不再赘述.
+        \item [(2)]记素数为$p,p>3$.
+        \begin{enumerate}
+            \item [(a)]$p<6$，则$p=5$，成立.
+            \item [(b)]$p>6$，有$(6,p)=1$，故$p$属于6的缩系，故$p$模$6$或与1或5同余.
+        \end{enumerate}
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %15
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []不妨设这两个连续的立方数为$k^3$与${(k+1)}^3$.
+        \[
+            \begin{aligned}
+                {(k+1)}^3 - k^3 
+                \equiv & 3k^2 + 3k + 1 (\bmod 3) \\
+                \equiv & 1 (\bmod 3)
+            \end{aligned}
+        \]
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %16
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []设该数为$A=\overline{a_n a_{n-1} \ldots a_1 a_0}$，则
+        \[
+            A=\sum\limits_{i=0}^{i=n} a_i\cdot 10^{i},\quad
+            \sum\limits_{i=0}^{i=n} a_i \equiv 0 (\bmod 3)
+        \]
+        又$\forall\ k\in \mathbb{N},\ 10^{i} \equiv 1 (\bmod 3)$，故
+        \begin{align*}
+            A 
+            \equiv & \sum\limits_{i=0}^{i=n} a_i\cdot 10^{i} (\bmod 3)\\
+            \equiv & \sum\limits_{i=0}^{i=n} a_i(\bmod 3)\\
+            \equiv & 0(\bmod 3)
+        \end{align*}
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %17
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \[
+            10 \equiv -1 (\bmod 11)
+            \ \Rightarrow\ 
+            10^k \equiv {(-1)}^{k} (\bmod 11)
+        \]
+        \item [(2)]设数为$A=\overline{a_n a_{n-1} \ldots a_1 a_0}$，则
+        \[
+            A \equiv 0 (\bmod 11)
+            \ \Leftrightarrow\ 
+            \sum\limits_{i=0}^{n} {(-1)}^{i} \cdot a_i 
+            \equiv 0 (\bmod 11)
+        \]
+        即偶数位之和与奇数位之和的差能被$11$整除等价于该数也能被$11$整除.
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %18
-
+\begin{enumerate}
+    \item [(1)]
+    \[
+        \begin{aligned}
+            2x
+            \equiv & 1 (\bmod 17)\\
+            \equiv & 18 (\bmod 17)
+        \end{aligned}      
+        \ \xrightarrow{(2,17)=1}\ 
+        x\equiv 9 (\bmod 17)
+    \]
+    \item [(2)]$(3,18)=3|6$，故有3组解
+    由$x\equiv 2 (\bmod 6)$得原方程解为
+    \[
+        x\equiv 2 + 6t (\bmod 18)
+        \quad (0\leq t \leq 2).
+    \]
+    即
+    \[
+        x\equiv 2,8,14 (\bmod 18)  .
+    \]
+    \item [(3)]$(4,18)=2|6$，故有2组解
+    解$2x\equiv 3 (\bmod 9)$
+    \[
+        \begin{aligned}
+            2x
+            \equiv & 3 (\bmod 9)\\
+            \equiv & 12 (\bmod 9)
+        \end{aligned}
+        \ \xrightarrow{(2,9)=1}\ 
+        x\equiv 6(\bmod 9).
+    \]
+    即原方程解为
+    \[
+        x\equiv 6+9t (\bmod 18)\quad (t=0,1)
+        \ \Rightarrow\ 
+        x\equiv 6,15 (\bmod 18)  .
+    \]
+    
+    \item [(4)]
+    \[
+        \begin{aligned}
+            3x 
+            \equiv & 1 (\bmod 17)\\
+            \equiv & 18 (\bmod 17)
+        \end{aligned}   
+        \ \xrightarrow{(3,17)=1}\ 
+        x\equiv 6(\bmod 17) .
+    \]
+    
+\end{enumerate}
 
 \subsection{}   %19
-
+\begin{enumerate}
+    \item [(1)]
+    
+    \item [(2)]
+    
+    \item [(3)]
+    
+    \item [(4)]
+    
+\end{enumerate}
 
 \subsection{}   %20
 
