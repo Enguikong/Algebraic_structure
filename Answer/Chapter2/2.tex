@@ -1035,7 +1035,50 @@
 \end{proof}
 
 \subsection{}   %26
-
+\begin{enumerate}
+    \item [(1)]
+    \[
+        \frac{3}{2} \phi(3) 
+            = \frac{3}{2}\cdot 2  
+            = 3 
+            = 1 + 2. 
+        \qquad
+        \frac{4}{2} \phi(4)
+            = \frac{4}{2} \cdot 2 \\
+            = 4 \\
+            = 1+3 .
+    \]
+    \[
+        \frac{5}{2}\phi(5) = \frac{5}{2}\cdot 4 = 10 = 1+2+3+4.
+        \qquad
+        \frac{6}{2}\phi(6) = \frac{6}{2}\cdot 2 = 6 =1+5.
+    \]
+    \[
+        \frac{7}{2}\phi(7) = \frac{7}{2}\cdot 6 = 21= 1+2+3+4+5+6.
+        \qquad
+        \frac{8}{2}\phi(8) = \frac{8}{2}\cdot 4 = 16 =1+3+5+7.
+    \]
+    \item [(2)]对于整数$n\geq 3$，缩系中所有数的和等于$\frac{1}{2} n \cdot \phi (n)$.即
+    \[
+        \sum\limits_{\substack{ (d,n)=1\\ 1\leq d\leq n-1} } d
+        = \frac{1}{2}\phi(n) \cdot n.
+    \]
+    \item [(3)]
+    \begin{proof}
+        \begin{enumerate}
+            \item []
+            \item []$\forall\ 1 \leq d \leq n-1,\ (d,n)=1$，有$(n-d,n)=1$，且$d\neq n/2$，故
+            \[
+                \sum\limits_{\substack{ (d,n)=1\\ 1\leq d\leq n-1} } d
+                =
+                \sum\limits_{\substack{ (d,n)=1\\ 1\leq d < n/2 } } d + (n-d)
+                =
+                \frac{1}{2} n \cdot \phi(n)
+            \]
+        \end{enumerate}
+         
+    \end{proof}
+\end{enumerate}
 
 \subsection{}   %27
 \begin{align*}
@@ -1494,7 +1537,16 @@
 
 \subsection{}   %36
 \begin{proof}
-    
+    \begin{enumerate}
+        \item []$\forall\ p,\ \sigma(p) = p+1,\ \phi(p) = p-1,\ d(p) = 2$，有
+        \[
+            \sigma(p) = \phi (p) + d(p)
+            \quad \Rightarrow \quad
+            \sum\limits_{p\leq x} \sigma(p)
+            =\sum\limits_{p\leq x} \phi(p)+
+            \sum\limits_{p\leq x} d(p).
+        \]
+    \end{enumerate}
 \end{proof}
 
 \subsection{}   %37
@@ -1554,7 +1606,7 @@
 
 \subsection{}   %38
 \begin{enumerate}
-    \item [(1)]$2^{28} \equiv 1\pmod{29}$，即$2$为$28$的原根.
+    \item [(1)]$2$为$28$的原根.
     \[
         n = {ind}_{2}\  k\  \Leftrightarrow\  2^{n} \equiv k \pmod{29}
     \]
@@ -1580,19 +1632,196 @@
         x\equiv 19 \pmod{29}.
     \]
 
-    \item [(3)]
+    \item [(3)]由$2$为$28$的原根可知
+    \[
+        9\cdot {ind}_{2} x = {ind}_{2} 2 \pmod{28}
+    \]
+    又由$(1)$得${ind}_{2} 2=1$，有
+    \begin{align*}
+        9\cdot {ind}_{2} x = 1 \pmod{28}
+        & \Rightarrow\ 
+        {ind}_{2} x \equiv 25 \pmod{28}  \\
+        & \Rightarrow\ 
+        x \equiv 11 \pmod{29}.
+    \end{align*}
 \end{enumerate}
 
 \subsection{}   %39
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []不对，证明如下:
+        \[
+            {457}^{911} \equiv 1 \pmod{10021}
+            \quad \Leftrightarrow\quad
+            \begin{cases}
+                \ {457}^{911} & \equiv 1 \pmod{11}\\
+                \ {457}^{911} & \equiv 1 \pmod{911}
+            \end{cases}
+        \]
+        又
+        \[
+            \begin{cases}
+                \ {457}^{10} & \equiv 1 \pmod{11}\\
+                \ {457}^{910} & \equiv 1 \pmod{911}
+            \end{cases}
+            \quad \Rightarrow\quad
+            \begin{cases}
+                \ {457}^{911} & \equiv 6 \pmod{11}\\
+                \ {457}^{911} & \equiv 1457 \pmod{911}
+            \end{cases}
+        \]
+        故不对.
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %40
-
+\begin{enumerate}
+    \item []$\phi(\phi(37))=12$，即$37$有$12$个原根.
+    \item []又$2^{36}\equiv 1\pmod{37}$，且
+    \[ 
+        \begin{cases}
+            2^{1}  \equiv  \pmod{37};   
+            \qquad    
+            2^{2}  \equiv  \pmod{37};\\
+            2^{3}  \equiv  \pmod{37};
+            \qquad
+            2^{4}  \equiv  \pmod{37};\\
+            2^{6}  \equiv  \pmod{37};
+            \qquad
+            2^{9}  \equiv  \pmod{37};\\
+            2^{12} \equiv  \pmod{37};    
+            \qquad
+            2^{18} \equiv  \pmod{37};
+        \end{cases}
+        \ \Rightarrow\ 
+        2\mbox{为} 37\mbox{最小原根}.
+    \]
+    由推论$2.7$，对于$a=2^{i}\ ((i,36)=1),\ a$模$37$的阶为$36$.即原根集合为
+    \[
+        \{
+            \ x\  |\  1\leq x\leq 36,\ x\equiv 2^{i} \pmod{37} 
+        \}
+        \mbox{，且}
+        i\in
+        \{
+            1,5,7,11,13,17,19,23,25,29,31,35
+        \}
+    \]
+    经计算
+    \[
+        2^{1 } \equiv 2  \pmod{37},\             
+        2^{5 } \equiv 32 \pmod{37},\         
+        2^{7 } \equiv 17 \pmod{37},\         
+        2^{11} \equiv 13 \pmod{37},   
+    \]
+    \[
+        2^{13} \equiv 15 \pmod{37},\         
+        2^{17} \equiv 18 \pmod{37},\         
+        2^{19} \equiv 35 \pmod{37},\         
+        2^{23} \equiv 5  \pmod{37},
+    \]
+    \[
+        2^{25} \equiv 20 \pmod{37},\         
+        2^{29} \equiv 24 \pmod{37},\         
+        2^{31} \equiv 22 \pmod{37},\         
+        2^{35} \equiv 19 \pmod{37},
+    \]
+    \item []即37的原根集合为
+    \[
+        \{
+            2,5,13,15,17,18,19,20,22,24,32,35    
+        \}
+    \]
+\end{enumerate}
 
 \subsection{}   %41
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []设$(-a)$模$q$的阶为$d$.
+        \[
+            \begin{aligned}
+                q\mid (a^p +1)
+                & \Rightarrow\ 
+                a^p \equiv -1 \pmod{q}\\
+                & \Rightarrow\ 
+                -a^p \equiv 1 \pmod{q}\\
+                & \Rightarrow\ 
+                {(-a)}^p \equiv 1 \pmod{q}
+            \end{aligned}
+            \quad \Rightarrow \quad
+            d\mid p,\ d=1\mbox{或}p.
+        \]
+        \item [(1)]$d=1$
+        \begin{align*}
+            -a \equiv 1 \pmod{q}
+            & \Rightarrow\ 
+            a+1 \equiv 0 \pmod{q}\\
+            & \Rightarrow\ 
+            q\mid (a+1).
+        \end{align*}
+        \item [(2)]$d=p$
+        \begin{align*}
+            {(-a)}^p \equiv 1 \pmod{q}
+            & \Rightarrow\ 
+            p\mid \phi(q),\ p\mid (q-1)\\
+            & \Rightarrow\ 
+            2p | (q-1)\\
+            & \Rightarrow\ 
+            \exists\ k\in \mathbb{Z},\ 2kp = q - 1,\ q| (2kp+1)
+        \end{align*}
+        即证
+        \[
+            q\mid (a+1)
+            \ \mbox{或}\ 
+            q\mid (2kp + 1)
+            \qquad
+            (k\mbox{为某个整数}).
+        \]
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %42    
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []$6$的正因子为$1,2,3,6$，则$(a+1)$模$p$的阶为$6$等价于
+        \[
+            \begin{cases}
+                {(a+1)}     \not \equiv 1 \pmod{p}\qquad                 
+                {(a+1)}^{2} \not \equiv 1 \pmod{p}\\             
+                {(a+1)}^{3} \not \equiv 1 \pmod{p}\qquad             
+                {(a+1)}^{6} \equiv 1 \pmod{p}\\                 
+            \end{cases}
+        \]
+        \item [(1)]
+        \[
+            (a,p)=1 \quad \Rightarrow \quad 
+            (a+1) \not\equiv 1 \pmod{p}  
+            \quad \Rightarrow
+            p \nmid (a-1).
+        \]
+        \item [(2)]
+        由$a^3 \equiv 1\pmod{p} , a\not\equiv 1\pmod{p} , a^2 \not\equiv 1 \pmod{p}$，得
+        \[
+            a^3 -1 =(a-1)(a^2+a+1) \equiv 0 \pmod{p}
+            \ \Rightarrow\ 
+            p\mid (a^2+a+1)
+        \]
+        \[
+            {(a+1)}^2 = a^2 + 2a + 1 \equiv a \not\equiv 1 \pmod{p}. 
+        \]
+        \item [(3)]
+        \[
+            {(a+1)}^3 \equiv a(a+1) \equiv -a^3 \equiv -1 \pmod{p}.    
+        \]
+        \item [(4)]
+        \[
+            {(a+1)}^6 \equiv 1 \pmod{p}.    
+        \]
+        即证$(a+1)$模$p$的阶为$6$.
+    \end{enumerate}
+\end{proof}
 
 \end{document}
