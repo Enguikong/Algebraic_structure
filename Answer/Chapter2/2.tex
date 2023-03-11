@@ -1168,25 +1168,337 @@
 \end{proof}
 
 \subsection{}   %31
-
+\[
+    \begin{aligned}
+        d(42)
+        & = 
+        d(2\cdot 3 \cdot 7)\\
+        & =
+        2^3\\
+        & = 
+        8.
+    \end{aligned}
+    \qquad\quad
+    \begin{aligned}
+        d(420)
+        & = 
+        d(2^2 \cdot 3 \cdot 5 \cdot 7)\\
+        & =
+        3\cdot 2^3 \\
+        & = 
+        24.
+    \end{aligned}
+    \qquad\quad
+    \begin{aligned}
+        d(4200)
+        & = 
+        d(2^3 \cdot 3 \cdot 5^2 \cdot 7)\\
+        & =
+        4\cdot 3\cdot 2^2 \\
+        & = 
+        48.
+    \end{aligned}
+\]
+\begin{align*}
+    &\begin{aligned}
+        \sigma(42)
+        & = 
+        \sigma(2\cdot 3 \cdot 7)\\
+        & =
+        \displaystyle{
+            \frac{2^2 -1 }{2-1}\cdot 
+            \frac{3^2 -1 }{3-1}\cdot
+            \frac{7^2 -1 }{7-1}
+        }\\
+        & = 
+        96.
+    \end{aligned} 
+    \qquad
+    \qquad
+    \begin{aligned}
+        \sigma(420)
+        & = 
+        \sigma(2^2 \cdot 3 \cdot 5 \cdot 7)\\
+        & =
+        \displaystyle{
+            \frac{2^3 -1}{2-1}\cdot 
+            \frac{3^2 -1}{3-1}\cdot
+            \frac{5^2 -1}{5-1}\cdot
+            \frac{7^2 -1}{7-1}
+        }\\
+        & = 
+        1344.
+    \end{aligned} \\
+    \\
+    &\begin{aligned}
+            \sigma(4200)
+            & = 
+            \sigma(2^3 \cdot 3 \cdot 5^2 \cdot 7)\\
+            & =
+            \displaystyle{
+                \frac{2^4 - 1}{2-1}\cdot 
+                \frac{3^2 - 1}{3-1}\cdot
+                \frac{5^3 - 1}{5-1}\cdot
+                \frac{7^2 - 1}{7-1}
+            }\\
+            & = 
+            14880.
+        \end{aligned}
+\end{align*}
 
 \subsection{}   %32
-
+不妨设$n$有素数分解
+\[
+    n = n_1^{k_1} n_2^{k_2} \cdots n_x^{k_x}
+    \ \Rightarrow\ 
+    \sigma(n) = 
+    (k_1 + 1) (k_2 + 1 )\ldots (k_x + 1)=60
+\]
+又
+\[
+    \left\lceil \log_{2} (10^4)\right\rceil = 13  
+    \ \Rightarrow\ 
+    k_1 + k_2 + \cdots + k_x \leq 13  
+\]
+\[
+    n = 2^4 \cdot 3^2 \cdot 5\cdot 7 = 5040
+    \qquad
+    \mbox{或}
+    \qquad
+    n = 2^4 \cdot 5^2 \cdot 3\cdot 7 = 8400
+\]
 
 \subsection{}   %33
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []设$d_1,d_2,\ldots,d_k$为$n$的全部因子 (相同因子算两遍)，则
+        \[
+            \forall\ 1\leq i \leq k,\ \exists!\ 1 \leq j \leq k,\ 
+            d_j = n/d_i
+        \]
+        不妨取一个排列使得$i+j=k+1$.
+        \begin{align*}
+            \sum\limits_{d\mid n} \frac{1}{d}
+            & =
+            \frac{1}{n} \sum\limits_{i=1}^{k} \frac{n}{d_i}\\
+            & = 
+            \frac{1}{n} \sum\limits_{i=1}^{k} d_{k+1-i}\\
+            & =
+            \frac{1}{n} \sum\limits_{i=1}^{k} d_{i}\\
+            & = 
+            \frac{1}{n} \sigma(n).
+        \end{align*}
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %34
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []不妨记偶完全数为
+        \[
+            n =2^{p-1}\cdot (2^p - 1)    
+            \qquad
+            (p,2^{p}-1 \mbox{均为素数})
+        \]
+        由题意可得
+        \[
+            2^{p-1}\cdot (2^p - 1) \equiv 6 \pmod{10}
+            \quad
+            \mbox{或}    
+            \quad
+            2^{p-1}\cdot (2^p - 1) \equiv 8 \pmod{10}
+        \]
+        等价于
+        \[
+            2^{p-2}\cdot (2^p - 1) \equiv 3 \pmod{5}
+            \quad
+            \mbox{或}    
+            \quad
+            2^{p-2}\cdot (2^p - 1) \equiv 4 \pmod{5}
+        \]
+        \[
+            \begin{cases}
+                (2^{p-2} , 5)  &= 1\\
+                (2^{p} -1 , 5) &=1
+            \end{cases}
+            \ \Rightarrow\ 
+            \begin{cases}
+                2^{p-2} & \equiv a \pmod{5} \quad(a\in \{1,2,3,4\})\\
+                2^{p}-1 & \equiv b \pmod{5} \quad(b\in \{1,2,3,4\})
+            \end{cases}
+        \]
+        \item [(1)]$2^{p-2}\equiv 1 \pmod{5}$
+        \[
+            \begin{aligned}
+                2^{p} - 1 
+                & \equiv  
+                2^2\cdot 1  - 1 \pmod{5}\\
+                & \equiv
+                3 \pmod{5} 
+            \end{aligned}
+            \quad \Rightarrow\quad 
+            \begin{aligned}
+                2^{p-2}\cdot (2^p - 1) 
+                & \equiv
+                3\cdot 1 \pmod{5}\\
+                & \equiv
+                3 \pmod{5}
+            \end{aligned}
+        \]
+        \item [(2)]$2^{p-2}\equiv 2 \pmod{5}$
+        \[
+            \begin{aligned}
+                2^{p} - 1 
+                & \equiv  
+                2^2\cdot 2  - 1 \pmod{5}\\
+                & \equiv
+                2 \pmod{5} 
+            \end{aligned}
+            \quad \Rightarrow\quad 
+            \begin{aligned}
+                2^{p-2}\cdot (2^p - 1) 
+                & \equiv
+                2\cdot 2 \pmod{5}\\
+                & \equiv
+                4 \pmod{5}
+            \end{aligned}
+        \]
+        \item [(3)]$2^{p-2}\equiv 3 \pmod{5}$
+        \[
+            \begin{aligned}
+                2^{p} - 1 
+                & \equiv  
+                2^2\cdot 3  - 1 \pmod{5}\\
+                & \equiv
+                1 \pmod{5} 
+            \end{aligned}
+            \quad \Rightarrow\quad 
+            \begin{aligned}
+                2^{p-2}\cdot (2^p - 1) 
+                & \equiv
+                3\cdot 1 \pmod{5}\\
+                & \equiv
+                3 \pmod{5}
+            \end{aligned}
+        \]
+        \item [(4)]$2^{p-2}\equiv 4 \pmod{5}$
+        \[
+            \begin{aligned}
+                2^{p} - 1 
+                & \equiv  
+                2^2\cdot 4  - 1 \pmod{5}\\
+                & \equiv
+                0 \pmod{5} 
+            \end{aligned}
+            \quad \Rightarrow\quad 
+            0\notin \{1,2,3,4\},
+            \mbox{该情况不存在}.
+        \]
+        综上，即证
+        \[
+            2^{p-1}\cdot (2^p - 1) \equiv 6 \pmod{10}
+            \quad
+            \mbox{或}    
+            \quad
+            2^{p-1}\cdot (2^p - 1) \equiv 8 \pmod{10}
+        \]
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %35
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []由题意可得
+        \[
+            n =2^{p-1}\cdot (2^p - 1)    
+            \qquad
+            (p,\ 2^{p}-1 \mbox{均为素数})
+        \]
+        又$n>6$，故$p>2,\ 2|p-1$，不妨记$p-1=2k\ (k\in \mathbb{Z}^{*})$，有
+        \[
+            n = 2^{2k} \cdot (2^{2k+1} - 1)
+            = 4^{k} \cdot (2\cdot 4^{k} -1)    
+        \]
+        又
+        \[
+            \forall\ k\geq 1,\ 
+            4^{k} \equiv m \pmod{9},\ 
+            \mbox{有}
+            m\in\{4,7, 1\}
+        \]
+        \item [(1)]$4^{k} \equiv 4 \pmod{9}$
+        \[
+            \begin{aligned}
+                2\cdot 4^{k} - 1
+                & \equiv 
+                2\cdot 4 -1 \pmod{9}\\
+                & \equiv
+                7 \pmod{9}
+            \end{aligned}
+            \quad \Rightarrow \quad
+            \begin{aligned}
+                4^{k}\cdot (2\cdot 4^{k} -1)
+                & \equiv
+                4\cdot 7 \pmod{9}\\
+                & \equiv
+                1 \pmod{9}
+            \end{aligned}  
+        \]
+        \item [(2)]$4^{k} \equiv 7 \pmod{9}$
+        \[
+            \begin{aligned}
+                2\cdot 4^{k} - 1
+                & \equiv 
+                2\cdot 7 -1 \pmod{9}\\
+                & \equiv
+                4 \pmod{9}
+            \end{aligned}
+            \quad \Rightarrow \quad
+            \begin{aligned}
+                4^{k}\cdot (2\cdot 4^{k} -1)
+                & \equiv
+                7\cdot 4 \pmod{9}\\
+                & \equiv
+                1 \pmod{9}
+            \end{aligned}  
+        \]
+        \item [(3)]$4^{k} \equiv 1 \pmod{9}$
+        \[
+            \begin{aligned}
+                2\cdot 4^{k} - 1
+                & \equiv 
+                2\cdot 1 -1 \pmod{9}\\
+                & \equiv
+                1 \pmod{9}
+            \end{aligned}
+            \quad \Rightarrow \quad
+            \begin{aligned}
+                4^{k}\cdot (2\cdot 4^{k} -1)
+                & \equiv
+                1\cdot 1 \pmod{9}\\
+                & \equiv
+                1 \pmod{9}
+            \end{aligned}  
+        \]
+        \item []综上，即证
+        \[
+            n \equiv 1 \pmod{9} .
+        \]
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %36
-
+\begin{proof}
+    
+\end{proof}
 
 \subsection{}   %37
-
+\begin{enumerate}
+    \item []
+\end{enumerate}
 
 \subsection{}   %38
 
