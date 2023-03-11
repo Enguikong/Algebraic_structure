@@ -1065,10 +1065,107 @@
 \end{enumerate}
 
 \subsection{}   %29
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \begin{align*}
+            {(k+1)}^p - k^p \equiv 1 \pmod{p}\ 
+            & \Leftrightarrow\ 
+            p\mid {(k+1)}^p - k^p -1 \\
+            & \Leftrightarrow\ 
+            p\mid \sum\limits_{i=1}^{p-1} C_{p}^{i}\cdot k^{p-i}
+        \end{align*}
+        有
+        \[
+            C_{p}^{i}=
+            \displaystyle{
+                \frac{p(p-1)\ldots (p-i+1)}{i!}
+            }
+            \in \mathbb{N},
+            \ \Rightarrow\ 
+            i! \mid p(p-1)\ldots (p-i+1).
+            \quad (1\leq i \leq p-1)
+        \]
+        又$\forall\ 1\leq i\leq p-1,\ (p,i)=1$，故$(p,i!)=1$，即
+        \[
+            i!\mid (p-1)\ldots (p-i+1)
+            \ \Rightarrow\ 
+            \displaystyle{
+                \frac{(p-1)\ldots(p-i+1)}{i!}
+            }
+            \in \mathbb{N},\ 
+            p\mid C_{p}^{i}.
+        \]
+        故有
+        \[
+            p\mid C_{p}^{i}
+            \ \Rightarrow\ 
+            p\mid \sum\limits_{i=1}^{p-1} C_{p}^{i}\cdot k^{p-i}
+            \ \Rightarrow\ 
+            {(k+1)}^p - k^p \equiv 1 \pmod{p}.
+        \]
+        \item [(2)]对于任意素数$p$有$p\nmid a$，则
+        \[
+            \begin{aligned}
+                a^{p}
+                & \equiv 
+                \sum\limits_{k=0}^{a-1} \left({(k+1)}^{p} - {k}^{p} \right) \pmod{p}\\
+                & \equiv 
+                \sum\limits_{k=0}^{a-1} 1 \pmod{p}\\
+                & \equiv
+                a \pmod{p}
+            \end{aligned}
+        \]
+        又$(a^p,a)=a,(p,a)=1$，故有
+        \[
+            a^{p-1} \equiv 1 \pmod{p}.
+        \]
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %30
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \[
+            \forall\ 1\leq k \leq p-1,\ 
+            (k,p)=1\mbox{且}p\mid k
+            \ \Rightarrow\ 
+            k^{p-1} \equiv 1 \pmod{p}
+        \]
+        故
+        \begin{align*}
+            \sum\limits_{i=1}^{p-1} i^{p-1}
+            & \equiv 
+            \sum\limits_{i=1}^{p-1} 1 \pmod{p}\\
+            & \equiv
+            p-1 \pmod{p}\\
+            & \equiv
+            -1 \pmod{p}.
+        \end{align*}
+        \item [(2)]
+        \begin{align*}
+            \forall\ 1\leq k \leq p-1,\ 
+            (k,p)=1\mbox{且}p\mid k
+            & \Rightarrow\ 
+            k^{p-1} \equiv 1 \pmod{p}\\
+            & \Rightarrow\ 
+            k^{p} \equiv k \pmod{p}
+        \end{align*}
+        故
+        \begin{align*}
+            \sum\limits_{i=1}^{p-1} i^{p-1}
+            & \equiv 
+            \sum\limits_{i=1}^{p-1} i \pmod{p}\\
+            & \equiv
+            \displaystyle{\frac{p(p-1)}{2}} \pmod{p}\\
+            & \equiv
+            0 \pmod{p}.\qquad (2|p-1)
+        \end{align*}
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %31
 
