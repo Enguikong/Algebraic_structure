@@ -1,7 +1,8 @@
 \documentclass[UTF8]{ctexart}
 \usepackage{verbatim,amsthm,amsfonts,mathdots}
 \usepackage{xeCJK,geometry,float,graphicx}
-\usepackage{amsmath,amssymb,zhnumber,booktabs,setspace,tasks}
+\usepackage{amsmath,amssymb,zhnumber,booktabs,setspace,tasks,booktabs}
+\usepackage{tabularray}
 \usepackage{cases}
 \usepackage{cite}
 \usepackage{fancyhdr}
@@ -9,7 +10,8 @@
 \geometry{a4paper}
 \pagestyle{fancy}
 \fancyhf{}
-
+\setlength{\tabcolsep}{8pt} % Default value: 6pt
+\renewcommand{\arraystretch}{2} % Default value: 1
 \pagenumbering{arabic}
 
 \begin{document}
@@ -1552,12 +1554,32 @@
 
 \subsection{}   %38
 \begin{enumerate}
-    \item [(1)]$2^{28} \equiv 1\pmod{29}$，即$2$为$28$的原根
+    \item [(1)]$2^{28} \equiv 1\pmod{29}$，即$2$为$28$的原根.
     \[
-        n = {ind}_{29}\  k\  \Leftrightarrow\  2^{n} \equiv k \pmod{29}
+        n = {ind}_{2}\  k\  \Leftrightarrow\  2^{n} \equiv k \pmod{29}
     \]
+    \begin{table}[!ht]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+            k & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14  \\ \hline
+            n & 0 & 1 & 5 & 2 & 22 & 6 & 12 & 3 & 10 & 23 & 25 & 7 & 18 & 13  \\ \hline
+            k & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28  \\ \hline
+            n & 27 & 4 & 21 & 11 & 9 & 24 & 17 & 26 & 20 & 8 & 16 & 19 & 15 & 14  \\ \hline
+        \end{tabular}
+    \end{table}
     
-    \item [(2)]
+    \item [(2)]由$2$为$28$的原根可知
+    \[
+        {ind}_{2} 9 + {ind}_{2} x = {ind}_{2} 2 \pmod(28)    
+    \]
+    又由$(1)$得${ind}_{2} 9 = 10,\ {ind}_{2} 2=1$，有
+    \[
+        {ind}_{2} x = -9 \equiv 19 \pmod{28}    
+        \ \Rightarrow\ 
+        x\equiv 19 \pmod{29}.
+    \]
+
     \item [(3)]
 \end{enumerate}
 

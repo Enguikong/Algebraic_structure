@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.5)  11 MAR 2023 22:02
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.5)  11 MAR 2023 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -397,9 +397,100 @@ Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
 Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
 (xtemplate)             line 450.
 
- (c:/texlive/2022/texmf-dist/tex/latex/tasks/tasks.cfg)) (c:/texlive/2022/texmf-dist/tex/latex/cases/cases.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/tasks/tasks.cfg)) (c:/texlive/2022/texmf-dist/tex/latex/tabularray/tabularray.sty
+Package: tabularray 2022-07-01 v2022C Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count319
+\l__tblr_c_int=\count320
+\l__tblr_r_int=\count321
+\l__tblr_d_dim=\dimen272
+\l__tblr_h_dim=\dimen273
+\l__tblr_o_dim=\dimen274
+\l__tblr_p_dim=\dimen275
+\l__tblr_q_dim=\dimen276
+\l__tblr_r_dim=\dimen277
+\l__tblr_s_dim=\dimen278
+\l__tblr_t_dim=\dimen279
+\l__tblr_v_dim=\dimen280
+\l__tblr_w_dim=\dimen281
+\l__tblr_a_box=\box64
+\l__tblr_b_box=\box65
+\l__tblr_c_box=\box66
+\l__tblr_d_box=\box67
+\g__tblr_table_count_int=\count322
+\c@rownum=\count323
+\c@colnum=\count324
+\c@rowcount=\count325
+\c@colcount=\count326
+\abovesep=\dimen282
+\belowsep=\dimen283
+\leftsep=\dimen284
+\rightsep=\dimen285
+\g_tblr_level_int=\count327
+\g__tblr_data_row_key_count_int=\count328
+\g__tblr_data_column_key_count_int=\count329
+\g__tblr_data_cell_key_count_int=\count330
+\g__tblr_array_int=\count331
+\l__tblr_key_count_int=\count332
+\l__tblr_key_quotient_int=\count333
+\l__tblr_key_quotient_two_int=\count334
+\l__tblr_key_remainder_int=\count335
+\g__tblr_data_str_value_count_int=\count336
+\rulewidth=\dimen286
+\l__tblr_strut_dp_dim=\dimen287
+\l__tblr_strut_ht_dim=\dimen288
+\g__tblr_cell_wd_dim=\dimen289
+\g__tblr_cell_ht_dim=\dimen290
+\g__tblr_cell_head_dim=\dimen291
+\g__tblr_cell_foot_dim=\dimen292
+\l__column_target_dim=\dimen293
+\l__tblr_caption_box=\box68
+\l__tblr_caption_left_box=\box69
+\l__tblr_row_head_box=\box70
+\l__tblr_row_foot_box=\box71
+\l__tblr_row_head_foot_dim=\dimen294
+\tablewidth=\dimen295
+\l__tblr_table_firsthead_box=\box72
+\l__tblr_table_middlehead_box=\box73
+\l__tblr_table_lasthead_box=\box74
+\l__tblr_table_firstfoot_box=\box75
+\l__tblr_table_middlefoot_box=\box76
+\l__tblr_table_lastfoot_box=\box77
+\l__tblr_remain_height_dim=\dimen296
+\l__tblr_long_from_int=\count337
+\l__tblr_long_to_int=\count338
+\l__tblr_curr_i_int=\count339
+\l__tblr_prev_i_int=\count340
+\l__tblr_table_page_int=\count341
+\l__tblr_table_head_box=\box78
+\l__tblr_table_foot_box=\box79
+\l__tblr_table_head_foot_dim=\dimen297
+\l__tblr_table_head_body_foot_dim=\dimen298
+\l__tblr_table_box=\box80
+\l__tblr_table_hlines_box=\box81
+\l__tblr_hline_box=\box82
+\l__tblr_row_box=\box83
+\l__tblr_col_o_wd_dim=\dimen299
+\l__tblr_col_b_wd_dim=\dimen300
+\l__tblr_hline_leftskip_dim=\dimen301
+\l__tblr_hline_rightskip_dim=\dimen302
+\l__tblr_row_ht_dim=\dimen303
+\l__tblr_row_dp_dim=\dimen304
+\l__tblr_row_abovesep_dim=\dimen305
+\l__tblr_row_belowsep_dim=\dimen306
+\l__tblr_row_vlines_box=\box84
+\l__tblr_vline_box=\box85
+\l__tblr_cell_box=\box86
+\l__row_upper_dim=\dimen307
+\l__row_lower_dim=\dimen308
+\l__row_vpace_dim=\dimen309
+\l__tblr_vline_aboveskip_dim=\dimen310
+\l__tblr_vline_belowskip_dim=\dimen311
+\l__tblr_cell_wd_dim=\dimen312
+\l__tblr_cell_ht_dim=\dimen313
+\l__tblr_diag_box=\box87
+) (c:/texlive/2022/texmf-dist/tex/latex/cases/cases.sty
 Package: cases 2020/03/29 ver 3.2
-\numc@numwid=\dimen272
+\numc@numwid=\dimen314
 ) (c:/texlive/2022/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -418,84 +509,84 @@ Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footer
 ) (c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip78
-\multirow@cntb=\count319
+\multirow@cntb=\count342
 \multirow@dima=\skip79
-\bigstrutjot=\dimen273
+\bigstrutjot=\dimen315
 ) (./2.aux)
 \openout1 = `2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 15.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 15.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 15.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 15.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 15.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 15.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 15.
-LaTeX Font Info:    Redeclaring math accent \check on input line 15.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 15.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 15.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 15.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 15.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 15.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 17.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 17.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 17.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 17.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 17.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 17.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 17.
+LaTeX Font Info:    Redeclaring math accent \check on input line 17.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 17.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 17.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 17.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 15.
+(Font)              `operators' in the math version `normal' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 15.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 15.
+(Font)              `operators' in the math version `bold' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 15.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 15.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 15.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 15.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 15.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 15.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 15.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 15.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 15.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 15.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -531,11 +622,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -710,62 +801,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [21]
-./2.tex:1564: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.1564             \{ind}\_\{29}
-                                 k & 0 & 1 & 5 & 2 & 22 & 6 & 12 & 3 & 10 & ...
-I'm guessing that you meant to end an alignment here.
 
-./2.tex:1564: Missing { inserted.
-<inserted text> 
-                {
-l.1564             \{ind}\_\{29}
-                                 k & 0 & 1 & 5 & 2 & 22 & 6 & 12 & 3 & 10 & ...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-./2.tex:1564: Misplaced alignment tab character &.
-l.1564             \{ind}\_\{29} k &
-                                     0 & 1 & 5 & 2 & 22 & 6 & 12 & 3 & 10 & ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+[22] (./2.aux) ) 
+Here is how much of TeX's memory you used:
+ 11844 strings out of 475748
+ 304363 string characters out of 5802712
+ 670932 words of memory out of 5000000
+ 32878 multiletter control sequences out of 15000+600000
+ 473940 words of font info for 67 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 89i,17n,97p,1187b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-./2.tex:1564: Misplaced alignment tab character &.
-l.1564             \{ind}\_\{29} k & 0 &
-                                         1 & 5 & 2 & 22 & 6 & 12 & 3 & 10 & ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./2.tex:1564: Misplaced alignment tab character &.
-l.1564             \{ind}\_\{29} k & 0 & 1 &
-                                             5 & 2 & 22 & 6 & 12 & 3 & 10 & ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./2.tex:1564: Misplaced alignment tab character &.
-l.1564             \{ind}\_\{29} k & 0 & 1 & 5 &
-                                                 2 & 22 & 6 & 12 & 3 & 10 & ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./2.tex:1564: Misplaced alignment tab character &.
-l.1564 ...       \{ind}\_\{29} k & 0 & 1 & 5 & 2 &
-                                                   22 & 6 & 
+Output written on 2.pdf (22 pages).
