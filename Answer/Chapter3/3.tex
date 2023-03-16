@@ -126,8 +126,15 @@
         \[
             \forall\ g(x)=a\ (0\neq a\in\mathbb{R}),\ 
             \mbox{若}\exists\ f(x)\in R[x],\mbox{满足} I(f(x))=g(x)=a，
-            \frac{d}{dx}f(x)=g(x).
+            I(f(x))=g(x).
         \]
+        则
+        \[
+            g(x) = \int_{0}^{x} f(t) \,dt  
+            \ \xrightarrow{x=0}\ 
+            g(0) = \int_{0}^{0} f(t) \,dt = 0 \neq a.  
+        \]
+        矛盾.
     \end{enumerate}
 \end{proof}
 
