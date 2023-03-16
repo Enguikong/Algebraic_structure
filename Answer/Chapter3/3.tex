@@ -48,16 +48,56 @@
 
 \subsection{}   %3
 \begin{enumerate}
-    \item [(1)]
-    \item [(2)]
-    \item [(3)]
-    \item [(4)]
-    \item [(5)]
+    \item [(1)]满射
+    \[
+        \forall\ y\in \mathbb{Z}^{+},\ 
+        \exists\ x=\pm(y-1)\in \mathbb{Z},\ 
+        f(x)=y.    
+    \]
+    \item [(2)]既不是单射，又不是满射.值域为$\{0,1,2\}\subseteq \mathbb{Z}\cup\{0\}$
+    \[
+        \forall\ y\in \mathbb{Z}\cup\{0\}
+        \begin{cases}
+            y\in \{0,1,2\},\ \exists\ x=3k+y(k\in \mathbb{Z}),\ f(x)=y.\\
+            y\notin \{0,1,2\},\ \forall\ x\in \mathbb{Z},\ f(x)\neq y.
+        \end{cases}
+    \]
+    \item [(3)]$f,g$均是双射.
+    \[
+        \begin{cases}
+            \forall\ y\in \mathbb{Z},\ \exists !\ x=y-1\in \mathbb{Z},f(x)=y.\\
+            \forall\ y\in \mathbb{Z},\ \exists !\ x=y+1\in \mathbb{Z},g(x)=y. 
+        \end{cases}    
+    \]
+    \item [(4)]满射.
+    \[
+        \forall\ y\in \{0,1\},\ 
+        \exists\ x=2k+y+1(k\in\mathbb{Z}),\ f(x)=y.    
+    \]
+    \item [(5)]既不是单射，又不是满射.
+    \[
+        \begin{cases}
+            \forall\ y\in \mathbb{Z},\ y<-16,\ \forall\ x\in\mathbb{Z},\ f(x)>y.\\
+            \exists\ y=-15,\ f(0)=f(-2)=y.
+        \end{cases}
+    \]
 \end{enumerate}
 
 \subsection{}   %4
 \begin{proof}
-    
+    \[
+        \begin{cases}
+            f:A\times B \rightarrow B\times A,\ (a,b) \mapsto (b,a) \\
+            g:B\times A \rightarrow A\times B,\ (b,a) \mapsto (a,b) 
+        \end{cases}    
+    \]
+    则
+    \[
+        f\circ g = {Id}_{A\times B},\quad
+        g\circ f = {Id}_{B\times A},\quad
+        g=f^{-1}. 
+    \]
+    即$f$为双射，即证$|A\times B|=|B\times A|$.
 \end{proof}
 
 \subsection{}   %5
@@ -65,7 +105,19 @@
     \begin{enumerate}
         \item []
         \item [(1)]
+        \[
+            \forall\ f(x)=\sum\limits_{i=0}^{n} a_i\cdot x^i,\ 
+            \exists !\ g(x)=\sum\limits_{i=1}^{n} i\cdot a_i \cdot x^{i-1},\ 
+            \frac{d}{dx}f(x)=g(x).\ (a_i \in\mathbb{R})
+        \]
+        值域为$R[x]$，是满射不是双射.
+        \[
+            \forall\ g(x)=\sum\limits_{i=0}^{n} a_i\cdot x^i,\ 
+            \exists\ f(x)=a+\sum\limits_{i=0}^{n} \frac{a_i}{i+1} \cdot x^{i+1},\ 
+            \frac{d}{dx}f(x)=g(x).\ (a,a_i \in\mathbb{R})
+        \]
         \item [(2)]
+        
     \end{enumerate}
 \end{proof}
 
