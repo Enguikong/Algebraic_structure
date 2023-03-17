@@ -143,7 +143,7 @@
     \begin{enumerate}
         \item []$\forall\ (b_{i1}, b_{i2}, \ldots, b_{in}) \in S(B)$，
         \[
-            \ \exists !\ f\in F,\ f: A \rightarrow B,\quad a_j \mapsto b_{ij}. 
+            \ \exists !\ f\in F,\ f: A \rightarrow B,\ a_j \mapsto b_{ij}. 
             \mbox{满足} g(f) = (b_{i1}, b_{i2}, \ldots, b_{in}) .
         \]
         即证$g$即是单射，又是满射，即$g$是从$F$到$S(B)$的双射.
@@ -157,24 +157,116 @@
 \begin{proof}
     \begin{enumerate}
         \item []
-        \item [(1)]
-        \item [(2)]
+        \item [(1)]$f(A\cup B) = f(A) \cup f(B)$
+        \begin{enumerate}
+            \item [(a)]$\forall\ y\in f(A\cup B),\ \exists\ x\in A\cup B,\ f(x)=y$.
+            \[
+                \begin{cases}
+                    x\in A , y=f(x)\in f(A)\\
+                    x\in B , y=f(x)\in f(B)
+                \end{cases}  
+                \ \Rightarrow \
+                y\in f(A)\cup f(B)
+                \ \Rightarrow \
+                f(A\cup B) \subseteq f(A)\cup f(B).
+            \]
+            \item [(b)]$\forall\ y\in f(A)\cup f(B),\ y\in f(A)\mbox{或}y\in f(B)$.
+            \[
+                \begin{cases}
+                    y\in f(A) , \exists\ x\in A, f(x) = y \\
+                    y\in f(B) , \exists\ x\in B, f(x) = y
+                \end{cases}  
+                \ \Rightarrow \
+                y\in f(A\cup B)
+                \ \Rightarrow \
+                f(A)\cup f(B) \subseteq f(A\cup B).
+            \]
+        \end{enumerate}
+        综上，即证
+        \[
+            f(A\cup B) = f(A) \cup f(B).
+        \]
+        \item [(2)]$f(A\cap B) \subseteq f(A) \cap f(B)$
+        \[
+            \forall\ y\in f(A\cap B),\ \exists\ x\in A\cap B,\ f(x)=y.    
+        \]
+        由$x\in A\cap B$有$x\in A,x\in B$，即
+        \[
+            \begin{cases}
+                x\in A,\ y=f(x)\in f(A)\\
+                x\in B,\ y=f(x)\in f(B)
+            \end{cases}    
+            \ \Rightarrow \ 
+            y\in f(A) \cap f(B)
+            \ \Rightarrow \ 
+            f(A\cap B) \subseteq f(A)\cap f(B).
+        \]
+        \item [(3)]
+        \[
+            S = \mathbb{Z}, T=\{1\}, 
+            A=\{2k+1 | k\in \mathbb{Z}\}, B=\{2k | k\in \mathbb{Z}\}
+        \]
+        取$f:S\rightarrow T, n \mapsto 1$，则
+        \[
+            \begin{cases}
+                f(A\cap B) = f(\phi) = \phi.\\
+                f(A)\cap f(B) = \{1\}
+            \end{cases}  
+            \quad \Rightarrow\quad 
+            f(A\cap B)\neq f(A) \cap f(B).  
+        \]
     \end{enumerate}
 \end{proof}
 
 \subsection{}   %8
 \begin{enumerate}
-    \item [(1)]
-    \item [(2)]
+    \item [(1)]$f$为单射：
+    
+    \item [(2)]$f$为满射：
+    
+    
 \end{enumerate}
 
 \subsection{}   %9
 \begin{enumerate}
     \item [(1)]
+    \[
+        f\circ g
+        =
+        3(3x+1)
+        =
+        9x+3.
+    \]
     \item [(2)]
+    \[
+        f\circ g
+        =
+        3    
+    \]
     \item [(3)]
+    \[
+        g\circ f
+        =
+        3(3x)+1
+        =
+        9x+1.
+    \]
     \item [(4)]
+    \[
+        g\circ h
+        =
+        3(3x+2)+1
+        =
+        9x+7.
+    \]
     \item [(5)]
+    \[
+        f\circ g \circ h
+        =
+        3(3(3x+2)+1)
+        =
+        27x+21.   
+    \]
 \end{enumerate}
 
 \subsection{}   %10
