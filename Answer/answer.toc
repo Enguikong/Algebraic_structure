@@ -70,9 +70,9 @@
 \contentsline {subsection}{\numberline {3.16}}{36}{}%
 \contentsline {subsection}{\numberline {3.17}}{36}{}%
 \contentsline {subsection}{\numberline {3.18}}{36}{}%
-\contentsline {subsection}{\numberline {3.19}}{36}{}%
-\contentsline {section}{\numberline {4}二元关系}{37}{}%
-\contentsline {section}{\numberline {5}群论初步}{38}{}%
-\contentsline {section}{\numberline {6}商群}{39}{}%
-\contentsline {section}{\numberline {7}环和域}{40}{}%
-\contentsline {section}{\numberline {8}格和布尔代数}{41}{}%
+\contentsline {subsection}{\numberline {3.19}}{37}{}%
+\contentsline {section}{\numberline {4}二元关系}{38}{}%
+\contentsline {section}{\numberline {5}群论初步}{39}{}%
+\contentsline {section}{\numberline {6}商群}{40}{}%
+\contentsline {section}{\numberline {7}环和域}{41}{}%
+\contentsline {section}{\numberline {8}格和布尔代数}{42}{}%
