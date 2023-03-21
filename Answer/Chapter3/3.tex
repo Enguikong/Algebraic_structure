@@ -93,8 +93,8 @@
     \]
     则
     \[
-        f\circ g = {Id}_{A\times B},\quad
-        g\circ f = {Id}_{B\times A},\quad
+        f\circ g = {I}_{A\times B},\quad
+        g\circ f = {I}_{B\times A},\quad
         g=f^{-1}. 
     \]
     即$f$为双射，即证$|A\times B|=|B\times A|$.
@@ -220,11 +220,35 @@
 
 \subsection{}   %8
 \begin{enumerate}
-    \item [(1)]$f$为单射：
-    
-    \item [(2)]$f$为满射：
-    
-    
+    \item [(1)]$f$为单射：$f(\widetilde{A})\subseteq \widetilde{f(A)}$.
+    \[
+        \forall\ y\in f(\widetilde{A}) \subseteq S,\ 
+        \exists !\ x\in S\mbox{且} x\in \widetilde{A},\ f(x)=y.  
+    \]
+    有
+    \[
+        \forall\ x\in A,\ f(x)\neq y,\ y\notin f(A) 
+        \ \Rightarrow\ 
+        y\in \widetilde{f(A)}. 
+    \]
+    即
+    \[
+        \forall\ y\in f(\widetilde{A}) \subseteq S,\ 
+        y\in \widetilde{f(A)}
+        \ \Rightarrow\ 
+        f(\widetilde{A})\subseteq \widetilde{f(A)}.
+    \]
+    \item [(2)]$f$为满射：$\widetilde{f(A)}\subseteq f(\widetilde{A})$.
+    \[
+        \forall\ y\in \widetilde{f(A)},\ 
+        \exists\ x\in S,f(x)=y.    
+    \]
+    若$x\in A,\ y=f(x)\in f(A)$，矛盾.故$x\in \widetilde{A}$.
+    \[
+        y=f(x)\in f(\widetilde{A})
+        \ \Rightarrow\ 
+        \widetilde{f(A)}\subseteq f(\widetilde{A}).
+    \]
 \end{enumerate}
 
 \subsection{}   %9
@@ -272,13 +296,36 @@
 \subsection{}   %10
 \begin{proof}
     
+    \begin{enumerate}
+        \item []
+        \item []先证$g\circ f$是从$A$到$C$的映射.
+        \[
+            \forall\ x\in A,\ \exists !\ y=f(x)\in B,\ \exists !\ z=g(y)\in C.
+        \]
+        \item []假设$g\circ f$不是从$A$到$C$的单射，则等价于
+        \[
+            \exists\ c\in C,\ \exists\ a_1,a_2\in A,\ a_1\neq a_2,\
+            g\circ f(a_1)=g\circ f(a_2)=c.
+        \]
+        即
+        \[
+            g(f(a_1))=g(f(a_2))=c\in C
+            \ \xrightarrow{g为单射}\ 
+            \exists !\ b\in B,\ g(b)=c,\ 
+            f(a_1)=f(a_2)=b\in B.    
+        \]
+        又
+        \[
+            f\mbox{为单射}
+            \ \Rightarrow\ 
+            \exists\ a\in A,\ f(a)=b.    
+        \]
+        即$a_1 = a_2 = a$，矛盾，即证$g\circ f$是从$A$到$C$的单射.
+    \end{enumerate}
 \end{proof}
 
 \subsection{}   %11
-\begin{enumerate}
-    \item [(1)]
-    \item [(2)]
-\end{enumerate}
+
 
 \subsection{}   %12
 \begin{enumerate}
