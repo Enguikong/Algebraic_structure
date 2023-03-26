@@ -1176,7 +1176,7 @@
         \item [(1)]
         \[
             \forall\ 1\leq k \leq p-1,\ 
-            (k,p)=1\mbox{且}p\mid k
+            (k,p)=1\mbox{且}p\nmid k
             \ \Rightarrow\ 
             k^{p-1} \equiv 1 \pmod{p}
         \]
@@ -1606,7 +1606,7 @@
 
 \subsection{}   %38
 \begin{enumerate}
-    \item [(1)]$2$为$28$的原根.
+    \item [(1)]$2$为$29$的原根.
     \[
         n = {ind}_{2}\  k\  \Leftrightarrow\  2^{n} \equiv k \pmod{29}
     \]
@@ -1621,18 +1621,18 @@
         \end{tabular}
     \end{table}
     
-    \item [(2)]由$2$为$28$的原根可知
+    \item [(2)]由$2$为$29$的原根可知
     \[
-        {ind}_{2} 9 + {ind}_{2} x = {ind}_{2} 2 \pmod(28)    
+        {ind}_{2} 9 + {ind}_{2} x = {ind}_{2} 2 \pmod{28}   
     \]
     又由$(1)$得${ind}_{2} 9 = 10,\ {ind}_{2} 2=1$，有
     \[
         {ind}_{2} x = -9 \equiv 19 \pmod{28}    
         \ \Rightarrow\ 
-        x\equiv 19 \pmod{29}.
+        x\equiv 2^{19} \equiv 26 \pmod{29}.
     \]
 
-    \item [(3)]由$2$为$28$的原根可知
+    \item [(3)]由$2$为$29$的原根可知
     \[
         9\cdot {ind}_{2} x = {ind}_{2} 2 \pmod{28}
     \]
@@ -1681,18 +1681,18 @@
     \item []又$2^{36}\equiv 1\pmod{37}$，且
     \[ 
         \begin{cases}
-            2^{1}  \equiv  \pmod{37};   
+            2^{1}  \equiv 2 \pmod{37};   
             \qquad    
-            2^{2}  \equiv  \pmod{37};\\
-            2^{3}  \equiv  \pmod{37};
+            2^{2}  \equiv 4 \pmod{37};\\
+            2^{3}  \equiv 8 \pmod{37};
             \qquad
-            2^{4}  \equiv  \pmod{37};\\
-            2^{6}  \equiv  \pmod{37};
+            2^{4}  \equiv 16 \pmod{37};\\
+            2^{6}  \equiv 27 \pmod{37};
             \qquad
-            2^{9}  \equiv  \pmod{37};\\
-            2^{12} \equiv  \pmod{37};    
+            2^{9}  \equiv 31 \pmod{37};\\
+            2^{12} \equiv 26 \pmod{37};    
             \qquad
-            2^{18} \equiv  \pmod{37};
+            2^{18} \equiv 36 \pmod{37};
         \end{cases}
         \ \Rightarrow\ 
         2\mbox{为} 37\mbox{最小原根}.
