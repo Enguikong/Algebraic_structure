@@ -11,7 +11,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\tabcolsep}{8pt} % Default value: 6pt
-\renewcommand{\arraystretch}{2} % Default value: 1
+
 \pagenumbering{arabic}
 
 \begin{document}
@@ -21,7 +21,7 @@
 \fancyhead[R]{妮可}
 \fancyfoot[C]{\thepage}
 
-\section{}
+\section{映射}
 \subsection{}   %1
 \begin{enumerate}
     \item [(1)]不能构成映射，如$x_1=0$，则$x_2=0,1,\ldots,9$均满足.
@@ -329,39 +329,170 @@
     \item []会发生矛盾.
     \item [(1)]先证$g$为满射
     \[
-        \mbox{若}\exists\ y\in S,\ \forall\ x\in S,\ g(x)\neq y,\     
+        \mbox{若}\exists\ y\in S,\ \forall\ x\in S,\ g(x)\neq y,\    
+        \mbox{则}f(y)\in S,\ \mbox{且}f(y)\notin f\circ g (S),\ \mbox{矛盾}.
     \]
 
     \item [(2)]再证$g$为单射
-    
-
+    \[
+        \mbox{若}\exists\ a,b\in S,\ a\neq b,\ \mbox{且}g(a)=g(b),\ 
+        \mbox{则}f(g(a))=f(g(b)).
+    \]
+    又$f\circ\ g (a)=a,\ f\circ g(b)=b,\ a\neq b$，矛盾.
+    \item []综上，即证$g$为双射.故
+    \[
+        \forall\ x\in\ S,\ f(g(x))=f(f^{-1}(x))=x,\ 
+        \ \Rightarrow\ 
+        \forall\ x\in\ S,\ g(x)=f^{-1}(x),\ g\circ f=I_S.    
+    \]
+    故矛盾.
 \end{enumerate}
 
 \subsection{}   %12
 \begin{enumerate}
     \item [(1)]
+    \[
+        \tau \sigma 
+        = 
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            1 & 2 & 3 & 6 & 5 & 4\\
+        \end{pmatrix}  
+        = 
+        (1)(2)(3)(4\ 6)(5).
+    \]
     \item [(2)]
+    \[
+        \tau ^2 \sigma 
+        = 
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            2 & 4 & 1 & 5 & 6 & 3
+        \end{pmatrix}  
+        =
+        \begin{pmatrix}
+            1 & 2 & 4 & 5 & 6 & 3
+        \end{pmatrix} .
+    \]
     \item [(3)]
+    \[
+        \sigma ^2 \tau  
+        = 
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            3 & 1 & 4 & 5 & 6 & 2
+        \end{pmatrix}
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            1 & 5 & 3 & 4 & 2 & 6
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            3 & 6 & 4 & 5 & 1 & 2
+        \end{pmatrix}.
+    \]
     \item [(4)]
+    \[
+        \sigma ^{-1} \tau \sigma 
+        = 
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            2 & 6 & 1 & 3 & 4 & 5\\
+        \end{pmatrix} 
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            1 & 2 & 3 & 6 & 5 & 4\\
+        \end{pmatrix}  
+        =
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6\\
+            2 & 6 & 1 & 5 & 4 & 3
+        \end{pmatrix}.
+    \]
 \end{enumerate}
 
 \subsection{}   %13
 \begin{enumerate}
     \item [(1)]
+    \[
+        (257)(78)(145)
+        =
+        \begin{pmatrix}
+            1 & 2 & 4 & 5 & 7 & 8\\
+            4 & 5 & 7 & 1 & 8 & 2
+        \end{pmatrix}  
+        =
+        (147825).
+    \]
     \item [(2)]
+    \[
+        (72815)(21)(476)(12)
+        =
+        \begin{pmatrix}
+            1 & 2 & 4 & 5 & 6 & 7 & 8\\
+            5 & 8 & 2 & 7 & 4 & 6 & 1
+        \end{pmatrix}  
+        =
+        (1576428).
+    \]
 \end{enumerate}
 
 \subsection{}   %14
 \begin{enumerate}
     \item [(1)]
+    \[
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+            8 & 2 & 6 & 3 & 7 & 4 & 5 & 1
+        \end{pmatrix}
+        =
+        (18)(2)(364)(57). 
+    \]
     \item [(2)]
+    \[
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+            3 & 6 & 4 & 1 & 8 & 2 & 5 & 7
+        \end{pmatrix}  
+        =(134)(26)(587).  
+    \]
     \item [(3)]
+    \[
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+            3 & 1 & 4 & 7 & 2 & 5 & 8 & 6
+        \end{pmatrix}
+        =(13478652). 
+    \]
 \end{enumerate}
 
 \subsection{}   %15
 \begin{enumerate}
     \item [(1)]
+    \[
+        (47)(261)(567)(1234)
+        =
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            6 & 3 & 7 & 2 & 1 & 4 & 5
+        \end{pmatrix}   
+        =
+        (1642375). 
+    \]
+    故阶为7.
     \item [(2)]
+    \[
+        (163) (1357) (67) (12345)   
+        =
+        \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            2 & 5 & 4 & 7 & 1 & 6 & 3
+        \end{pmatrix}
+        =
+        (125)(347)(6). 
+    \]
+    $[3,3,1]=3$，故阶为3.
 \end{enumerate}
 
 \subsection{}   %16
