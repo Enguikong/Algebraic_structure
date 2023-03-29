@@ -370,9 +370,7 @@
             2 & 4 & 1 & 5 & 6 & 3
         \end{pmatrix}  
         =
-        \begin{pmatrix}
-            1 & 2 & 4 & 5 & 6 & 3
-        \end{pmatrix} .
+        (124563).
     \]
     \item [(3)]
     \[
@@ -497,26 +495,102 @@
 
 \subsection{}   %16
 \begin{proof}
-    
+    \begin{enumerate}
+        \item []
+        \item [(1)]由定理$3.9$，任何$n$元置换都可以表示成若干不相交的轮换之乘积.
+        \item [(2)]任意轮换可以表示成对换之积.
+        \item [(3)]任意对换$\sigma=(ij)\ (j>i)$，有
+        \[
+            (ij)= (i (i+1)) ((i+1)(i+2))\ldots ((j-1)j).
+        \]
+        \item []综上，即证任意置换都可以表示成对换$(12),\ldots,((n-1)n)$的乘积.
+    \end{enumerate}
 \end{proof}
 
 \subsection{}   %17
-\begin{enumerate}
-    \item [(1)]
-    \item [(2)]
-\end{enumerate}
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \begin{align*}
+            x_1 x_2 x_3 + x_1 \overline{x}_2 x_3 + x_1  + x_1 \overline{x}_2 \overline{x}_3
+            & =
+            x_1 \left(x_2 x_3 + \overline{x}_2 x_3\right)+ x_1 \left(x_2 \overline{x}_3 + \overline{x}_2 \overline{x}_3 \right)\\
+            & =
+            x_1 x_3 \left(x_2 + \overline{x}_2 \right)+ x_1 \overline{x}_3 \left(x_2 + \overline{x}_2 \right)\\
+            & =
+            x_1 x_3 + x_1 \overline{x}_3\\
+            & =
+            x_1 \left(x_3 + \overline{x}_3 \right)\\
+            & =
+            x_1 .
+        \end{align*}
+        \item [(2)]
+        \begin{align*}
+            x_1 x_2 + x_2 x_3 + \overline{x}_1 x_3
+            & =
+            x_1 x_2 + (x_1 + \overline{x}_1)x_2 x_3 + \overline{x}_1 x_3\\
+            & =
+            x_1 x_2 + x_1 x_2 x_3 + \overline{x}_1 x_2 x_3 + \overline{x}_1 x_3\\
+            & =
+            x_1 x_2 (1 + x_3) + \overline{x}_1 x_3 (1 + x_2)\\
+            & =
+            x_1 x_2 + \overline{x}_1 x_3 .
+        \end{align*}
+    \end{enumerate}    
+\end{proof}
+
 
 \subsection{}   %18
-\begin{enumerate}
-    \item [(1)]
-    \item [(2)]
-    \item [(3)]
-\end{enumerate}
+\begin{proof}
+    \begin{enumerate}
+        \item [(1)]
+        \begin{align*}
+            f\cdot g + \overline{f}
+            & =
+            f\cdot (f+g) + \overline{f}\\
+            & =
+            f\cdot f + f\cdot g + \overline{f}\\
+            & =
+            f + \overline{f} + f\cdot g\\
+            & =
+            1 + f\cdot g\\
+            & =
+            1
+        \end{align*}
+        \item [(2)]
+        \begin{align*}
+            \overline{f} + g
+            & =
+            \overline{f} + f + g\\
+            & =
+            1 + g\\
+            & =
+            1
+        \end{align*}
+        \item [(3)]
+        \begin{align*}
+            p \cdot \overline{q}
+            & =
+            \overline{\overline{p} + q}\\
+            & =
+            \overline{1}\\
+            & =
+            0
+        \end{align*}
+    \end{enumerate}    
+\end{proof}
 
 \subsection{}   %19
 \begin{enumerate}
     \item [(1)]
+    \[
+        f= x_1 x_2 + x_1 \overline{x}_2 + \overline{x}_1 x_2 + \overline{x}_1 \overline{x}_2 .  
+    \]
     \item [(2)]
+    \[
+        g= x_1 x_2 + \overline{x}_1 \overline{x}_2 .
+    \]
 \end{enumerate}
 
 \end{document}
