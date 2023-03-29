@@ -169,10 +169,16 @@
         \item [3.]（终结语句）$x\in \ E$，当且仅当$x$是由有限次$1,2$得到的.
     \end{enumerate}
 
-    \item [(3)]设所求集合为$E$.
+    \item [(3)]设所求集合为$E$.先定义集合$A$
     \begin{enumerate}
-        \item [1.]（基础语句）$0,\ 10\in\ E$.
-        \item [2.]（归纳语句）若$x=\overline{A0}\in\ E\ (x\neq 0)$，则$\overline{A00},\ \overline{A10}\in \ E$.
+        \item [1.]（基础语句）$1\in\ A$.
+        \item [2.]（归纳语句）若$x\in\ A$，则$\overline{x0},\ \overline{x1}\in \ A$.
+        \item [3.]（终结语句）$x\in \ A$，当且仅当$x$是由有限次$1,2$得到的.
+    \end{enumerate}
+    再定义所求集合$E$
+    \begin{enumerate}
+        \item [1.]（基础语句）$0\in\ E$.
+        \item [2.]（归纳语句）若$x\in\ A$，则$\overline{x0}\in \ E$.
         \item [3.]（终结语句）$x\in \ E$，当且仅当$x$是由有限次$1,2$得到的.
     \end{enumerate}
 \end{enumerate}
