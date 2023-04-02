@@ -7,6 +7,7 @@
 \usepackage{cite}
 \usepackage{fancyhdr}
 \usepackage{multirow}
+\usepackage{slashed}
 \geometry{a4paper}
 \pagestyle{fancy}
 \fancyhf{}
@@ -23,10 +24,41 @@
 
 \section{二元关系}
 \subsection{}   %1
-
+\begin{enumerate}
+    \item [(1)]$R_1$.
+    \item [(2)]$R_2$.
+    \item [(3)]$R_3$.
+    \item [(4)]$R_4$.
+    \item [(5)]$R_5$.
+\end{enumerate}
 
 \subsection{}   %2
-
+\begin{enumerate}
+    \item [(1)]$a R_1 b$，当且仅当$ab \geq 0$，有
+    \[
+        \begin{cases}
+            &\forall\ a\in \mathbb{Z},\ a R_1 a;\\
+            &a R_1 b \ \leftrightarrow\ ab\geq 0 \ \leftrightarrow\ b R_1 a;\\
+            &(-1) R_1 0\ ,\ 0 R_1 1\ ,\ (-1)\slashed{R}_1 1 .
+        \end{cases}
+    \]
+    \item [(2)]$a R_2 b$，当且仅当$a \geq b$，有
+    \[
+        \begin{cases}
+            &\forall\ a\in \mathbb{Z},\ a R_2 a;\\
+            &a R_2 b,\ b R_2 c \ \Rightarrow\ a\geq b \geq c \ \Rightarrow\ a R_2 c;\\
+            &5 R_2 1\ , \ 1\slashed{R}_2 5 .
+        \end{cases}
+    \]
+    \item [(3)]$a R_3 b$，当且仅当$ab > 0$，有
+    \[
+        \begin{cases}
+            &a R_3 b \ \Rightarrow\ ab>0 \ \Rightarrow\ b R_3 a;\\
+            &a R_3 b,\ b R_3 c \ \Rightarrow\ ab>0,\ bc>0,\ ac=abcd/b^2>0 \ \Rightarrow\ a R_3 c;\\
+            &0\in\mathbb{Z},\ 0 \slashed{R}_3 0.
+        \end{cases}
+    \]
+\end{enumerate}
 
 \subsection{}   %3
 
