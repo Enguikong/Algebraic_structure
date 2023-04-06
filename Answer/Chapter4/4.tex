@@ -25,11 +25,11 @@
 \section{二元关系}
 \subsection{}   %1
 \begin{enumerate}
-    \item [(1)]$R_1$.
-    \item [(2)]$R_2$.
-    \item [(3)]$R_3$.
-    \item [(4)]$R_4$.
-    \item [(5)]$R_5$.
+    \item [(1)]$R_1$有对称性.
+    \item [(2)]$R_2$有对称性.
+    \item [(3)]$R_3$有传递性，反自反性.
+    \item [(4)]$R_4$有自反性，传递性，反对称性.
+    \item [(5)]$R_5$有自反性，对称性，传递性.
 \end{enumerate}
 
 \subsection{}   %2
@@ -61,43 +61,140 @@
 \end{enumerate}
 
 \subsection{}   %3
+\begin{enumerate}
+    \item [(1)]$R_1 \circ R_2 = \{(c,d) \}$
+    \item [(2)]$R_2 \circ R_1 = \{(a,d), (a,c)\}$
+    \item [(3)]$R_1^2 = \{(a,a), (a,b), (a,d)\}$ 
+    \item [(4)]$R_2^3 = \{(b,c), (b,d), (c,d)\}$
+\end{enumerate}
 
 \subsection{}   %4
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item []$\forall\ (a,c)\in R_1 \circ (R_2 \cap R_3)$，则
+        \[
+            \exists\ (a,b)\in (R_2 \cap R_3),\ (b,c)\in R_1 .    
+        \]
+        故
+        \[
+            \begin{cases}
+                (a,b) & \in R_2 \\
+                (a,b) & \in R_3
+            \end{cases}    
+            \ \Rightarrow\ 
+            \begin{cases}
+                (a,c) & \in R_1 \circ R_2\\
+                (a,c) & \in R_1 \circ R_3
+            \end{cases}
+            \ \Rightarrow\ 
+            (a,c)\in \left((R_1 \circ R_2) \cap (R_1 \circ R_3) \right)
+        \]
+        即证$R_1 \circ (R_2 \cap R_3) \subseteq (R_1 \circ R_2) \cap (R_1 \circ R_3)$.
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %5
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]$\forall\ x\in A,\ (x,x)\in I_A$，故$(x,x)\in R'$，即证$R'$在A上自反.
+        \item [(2)]$R \subseteq I_A \cup R\ \Rightarrow\ R\subseteq R'$.
+        \item [(3)]若有自反关系$R''$满足$R \subseteq R''$，由自反性可得$I_A \subseteq R''$，故
+        \[
+            R'=I_A \cup R \subseteq R''    
+        \]
+        即证$R'$为$R$的自反闭包.
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %6
-
+\begin{enumerate}
+    \item [(1)]
+    \begin{proof}
+        \begin{enumerate}
+            \item [(a)]自反性：
+            \[
+                \forall\ (a,b)\in \mathbb{N}\times \mathbb{N},\ 
+                a+b = b+a\ \Rightarrow\ (a,b)\sim (a,b).    
+            \]
+            \item [(b)]对称性：
+            \[
+                \forall\ (a,b)\sim (c,d),\ \mbox{有}
+                a+d = b+c,\ c+b = a+d
+                \ \Rightarrow\ 
+                (c,d)\sim (a,b).    
+            \]
+            \item [(c)]传递性：
+            \[
+                \forall\ (a,b)\sim (c,d),\ (c,d)\sim (e,f),\ \mbox{有}
+                a+d = b+c,\ c+f = d+e
+            \]
+            故
+            \[
+                a+f = (a+d)+(c+f)-d-c = (b+c)+(d+e)-d-c = b+e
+                \ \Rightarrow\ 
+                (a,b)\sim (e,f).
+            \]
+        \end{enumerate}
+    \end{proof}
+    \item [(2)]
+\end{enumerate}
 
 \subsection{}   %7
 
+
+
 \subsection{}   %8
+
+
 
 \subsection{}   %9
 
+
+
 \subsection{}   %10
+
+
 
 \subsection{}   %11
 
+
+
 \subsection{}   %12
+
+
 
 \subsection{}   %13
 
+
+
 \subsection{}   %14
+
+
 
 \subsection{}   %15
 
+
+
 \subsection{}   %16
+
+
 
 \subsection{}   %17
 
+
+
 \subsection{}   %18
+
+
 
 \subsection{}   %19
 
+
+
 \subsection{}   %20
+
 
 
 \end{document}
