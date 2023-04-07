@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.5)  7 APR 2023 15:35
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.5)  7 APR 2023 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,16 +660,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-LaTeX Font Info:    Trying to load font information for U+rsfso on input line 151.
+LaTeX Font Info:    Trying to load font information for U+rsfso on input line 154.
  (c:/texlive/2022/texmf-dist/tex/latex/rsfso/ursfso.fd
 File: ursfso.fd 2011/02/13 Fontinst v1.933 font definitions for U/rsfso.
 )
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 151.
+(Font)              scaled to size 10.53937pt on input line 154.
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
-(Font)              scaled to size 7.0pt on input line 151.
+(Font)              scaled to size 7.0pt on input line 154.
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
-(Font)              scaled to size 5.0pt on input line 151.
+(Font)              scaled to size 5.0pt on input line 154.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -686,7 +686,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[4] (./4.aux) ) 
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
+
+[5] (./4.aux) ) 
 Here is how much of TeX's memory you used:
  12136 strings out of 475748
  309337 string characters out of 5802712
@@ -694,6 +702,6 @@ Here is how much of TeX's memory you used:
  33148 multiletter control sequences out of 15000+600000
  474401 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,12n,97p,1187b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,12n,97p,1187b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 4.pdf (4 pages).
+Output written on 4.pdf (5 pages).

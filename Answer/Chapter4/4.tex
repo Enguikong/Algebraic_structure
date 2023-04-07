@@ -137,9 +137,10 @@
                 \ \Rightarrow\ 
                 (a,b)\sim (e,f).
             \]
+            综上，即证$\sim$为$\mathbb{N}\times \mathbb{N}$上的等价关系.
         \end{enumerate}
     \end{proof}
-    \item [(2)]
+    \item [(2)]如图
 \end{enumerate}
 
 \subsection{}   %7
@@ -148,21 +149,101 @@
         \item []
         \item [(1)]
         \begin{enumerate}
-            \item [(a)]$\forall\ M\in \mathscr{P}(A)  $
-            \item [(b)]
-            \item [(c)]
+            \item [(a)]自反性：
+            \[
+                \forall\ X\in \mathscr{P}(A),\ |X|=|X|
+                \ \Rightarrow\ 
+                X \sim X.
+            \]
+            \item [(b)]对称性：
+            \[
+                \forall\ X,Y\in \mathscr{P}(A), X\sim Y
+                \ \Rightarrow\ 
+                |X|=|Y|,\ |Y|=|X|
+                \ \Rightarrow\ 
+                Y\sim X.    
+            \]
+            \item [(c)]传递性：
+            \[
+                \forall\ X,Y,Z\in \mathscr{P}(A), X\sim Y, Y\sim Z
+                \ \Rightarrow\ 
+                |X|=|Y|, |Y|=|Z|, |X|=|Z|
+                \ \Rightarrow\ 
+                X\sim Z.    
+            \]
+            综上，即证$\sim$是$\mathscr{P}(A)$上的等价关系.
         \end{enumerate}
-        \item [(2)]
+        \item [(2)]商集：
+        \[
+            \mathscr{P}(A)/\sim = 
+            \{[\phi ],[\{1\}],[\{1,2\}],[\{1,2,3\}],[\{1,2,3,4\}] \}    
+        \]
     \end{enumerate}
 \end{proof}
 
-
 \subsection{}   %8
-
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \begin{enumerate}
+            \item [(a)]自反性：
+            \[
+                \forall\ x\in \mathbb{R}^* ,\ x\cdot x = x^2 >0
+                \ \Rightarrow\ 
+                xRx.    
+            \]
+            \item [(b)]对称性：
+            \[
+                \forall\ x,y\in \mathbb{R}^*,\ xRy
+                \ \Rightarrow\ 
+                x\cdot y = y \cdot x >0
+                \ \Rightarrow\ 
+                yRx.
+            \]
+            \item [(c)]传递性：
+            \[
+                \forall\ x,y,z\in \mathbb{R}^*,\ xRy,yRz
+                \ \Rightarrow\ 
+                x\cdot y>0, y\cdot z>0, x\cdot z=\frac{(x\cdot y)\cdot (y\cdot z)}{y^2}>0   
+                \ \Rightarrow\ 
+                xRz.
+            \]
+            综上，即证$R$是$\mathbb{R}^*$上的等价关系.
+        \end{enumerate}
+        \item [(2)]$[1],\ [-1]$.
+    \end{enumerate}
+\end{proof}
 
 \subsection{}   %9
-
+\begin{proof}
+    \begin{enumerate}
+        \item []
+        \item [(1)]
+        \begin{enumerate}
+            \item [(a)]自反性：
+            \[
+                \forall\ x\in \mathbb{R},\ x-x=0\in \mathbb{Z}
+                \ \Rightarrow\ 
+                xRx.
+            \]
+            \item [(b)]对称性：
+            \[
+                \forall\ x,y\in \mathbb{R},\ xRy
+                \ \Rightarrow\ 
+                x-y\in \mathbb{Z},\ y-x=-(x-y)\in \mathbb{Z}
+                \ \Rightarrow\ 
+                yRx.
+            \]
+            \item [(c)]传递性：
+            \[
+                \forall\ 
+            \]
+            综上，即证$R$是$\mathbb{R}$上的等价关系.
+        \end{enumerate}
+        \item [(2)]$\left[0,1\right)$.
+    \end{enumerate}
+\end{proof}
 
 
 \subsection{}   %10
